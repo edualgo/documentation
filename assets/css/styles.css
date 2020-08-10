@@ -9,9 +9,9 @@
 */
 /* ======= Base ======= */
 body {
-  font-family: 'Ubuntu Mono', monospace;
+  font-family: 'Recursive', sans-serif;
   color: black;
-  font-size: 16px;
+  font-size: 17px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -109,8 +109,8 @@ code {
 }
 
 .btn-green, a.btn-green {
-  background: red;
-  border: 1px solid red;
+  background: #1b6ca8;
+  border: 1px solid #1b6ca8;
   color: #fff !important;
 }
 
@@ -141,8 +141,8 @@ code {
 }
 
 .btn-orange, a.btn-orange {
-  background: #F88C30;
-  border: 1px solid #F88C30;
+  background: brown;
+  border: 1px solid brown;
   color: #fff !important;
 }
 
@@ -152,13 +152,13 @@ code {
   border: 1px solid #f77e17;
 }
 
-.btn-red, a.btn-red {
+.btn-#1b6ca8, a.btn-#1b6ca8 {
   background: #f77b6b;
   border: 1px solid #f77b6b;
   color: #fff !important;
 }
 
-.btn-red:hover, .btn-red:focus, .btn-red:active, .btn-red.active, .btn-red.hover, a.btn-red:hover, a.btn-red:focus, a.btn-red:active, a.btn-red.active, a.btn-red.hover {
+.btn-#1b6ca8:hover, .btn-#1b6ca8:focus, .btn-#1b6ca8:active, .btn-#1b6ca8.active, .btn-#1b6ca8.hover, a.btn-#1b6ca8:hover, a.btn-#1b6ca8:focus, a.btn-#1b6ca8:active, a.btn-#1b6ca8.active, a.btn-#1b6ca8.hover {
   background: #f66553;
   color: #fff !important;
   border: 1px solid #f66553;
@@ -284,7 +284,7 @@ select {
 }
 
 .body-green .branding .text-highlight {
-  color: red;
+  color: #1b6ca8;
 }
 
 .body-blue .branding .text-highlight {
@@ -292,10 +292,10 @@ select {
 }
 
 .body-orange .branding .text-highlight {
-  color: #F88C30;
+  color: brown;
 }
 
-.body-red .branding .text-highlight {
+.body-#1b6ca8 .branding .text-highlight {
   color: #f77b6b;
 }
 
@@ -318,7 +318,7 @@ select {
 }
 
 .body-green .branding .icon {
-  color: red;
+  color: #1b6ca8;
 }
 
 .body-blue .branding .icon {
@@ -326,10 +326,10 @@ select {
 }
 
 .body-orange .branding .icon {
-  color: #F88C30;
+  color: brown;
 }
 
-.body-red .branding .icon {
+.body-#1b6ca8 .branding .icon {
   color: #f77b6b;
 }
 
@@ -352,7 +352,7 @@ select {
 }
 
 .breadcrumb li.active {
-  color: red;
+  color: #1b6ca8;
 }
 
 .breadcrumb li a {
@@ -360,7 +360,7 @@ select {
 }
 
 .breadcrumb li a:hover {
-  color: red;
+  color: #1b6ca8;
 }
 
 .breadcrumb > li + li:before {
@@ -453,7 +453,7 @@ select {
 }
 
 .body-green .doc-header .doc-title {
-  color: red;
+  color: #1b6ca8;
 }
 
 .body-blue .doc-header .doc-title {
@@ -461,10 +461,10 @@ select {
 }
 
 .body-orange .doc-header .doc-title {
-  color: #F88C30;
+  color: brown;
 }
 
-.body-red .doc-header .doc-title {
+.body-#1b6ca8 .doc-header .doc-title {
   color: #f77b6b;
 }
 
@@ -607,7 +607,7 @@ select {
 }
 
 .callout-block a {
-  color: red !important;
+  color: #1b6ca8 !important;
 }
 
 .callout-block a:hover {
@@ -619,7 +619,7 @@ select {
   position: absolute;
   left: 30px;
   top: 30px;
-  color: red;
+  color: #1b6ca8;
 }
 
 .callout-block .content {
@@ -633,7 +633,7 @@ select {
 .callout-block .callout-title {
   margin-top: 0;
   margin-bottom: 5px;
-  color: red;
+  color: #1b6ca8;
 }
 
 .callout-info {
@@ -647,7 +647,7 @@ select {
 }
 
 .callout-warning {
-  background: #F88C30;
+  background: brown;
   color: #fff;
 }
 
@@ -680,7 +680,7 @@ select {
   border-bottom-color: #b87fce;
 }
 
-.table-bordered > thead > tr > th {
+.table-borde#1b6ca8 > thead > tr > th {
   border-bottom-color: inherit;
 }
 
@@ -826,11 +826,11 @@ select {
 
 /* Color Schemes */
 .body-green .header {
-  border-color: red;
+  border-color: #1b6ca8;
 }
 
 .body-green a {
-  color: red;
+  color: #1b6ca8;
 }
 
 .body-green a:hover {
@@ -850,11 +850,11 @@ select {
 }
 
 .body-orange .header {
-  border-color: #F88C30;
+  border-color: brown;
 }
 
 .body-orange a {
-  color: #F88C30;
+  color: brown;
 }
 
 .body-orange a:hover {
@@ -885,15 +885,15 @@ select {
   color: #6c3282;
 }
 
-.body-red .header {
+.body-#1b6ca8 .header {
   border-color: #f77b6b;
 }
 
-.body-red a {
+.body-#1b6ca8 a {
   color: #f77b6b;
 }
 
-.body-red a:hover {
+.body-#1b6ca8 a:hover {
   color: #f4503b;
 }
 
@@ -939,8 +939,8 @@ select {
 }
 
 .body-green .doc-menu .nav-link.active {
-  color: red;
-  border-color: red;
+  color: #1b6ca8;
+  border-color: #1b6ca8;
 }
 
 .body-blue .doc-menu .nav-link.active {
@@ -949,11 +949,11 @@ select {
 }
 
 .body-orange .doc-menu .nav-link.active {
-  color: #F88C30;
-  border-color: #F88C30;
+  color: brown;
+  border-color: brown;
 }
 
-.body-red .doc-menu .nav-link.active {
+.body-#1b6ca8 .doc-menu .nav-link.active {
   color: #f77b6b;
   border-color: #f77b6b;
 }
@@ -1003,7 +1003,7 @@ select {
 }
 
 .body-green .doc-sub-menu .nav-link.active {
-  color: red;
+  color: #1b6ca8;
 }
 
 .body-blue .doc-sub-menu .nav-link.active {
@@ -1011,10 +1011,10 @@ select {
 }
 
 .body-orange .doc-sub-menu .nav-link.active {
-  color: #F88C30;
+  color: brown;
 }
 
-.body-red .doc-sub-menu .nav-link.active {
+.body-#1b6ca8 .doc-sub-menu .nav-link.active {
   color: #f77b6b;
 }
 
@@ -1071,7 +1071,7 @@ select {
 }
 
 .promo-block a {
-  color: red;
+  color: #1b6ca8;
   font-weight: bold;
 }
 
@@ -1100,7 +1100,7 @@ select {
 }
 
 .promo-block .promo-title .svg-inline--fa {
-  color: red;
+  color: #1b6ca8;
 }
 
 .promo-block .figure-holder-inner {
@@ -1158,7 +1158,7 @@ select {
 }
 
 .promo-block .highlight {
-  color: red;
+  color: #1b6ca8;
 }
 
 .promo-block .btn-cta {
@@ -1368,15 +1368,15 @@ select {
 }
 
 .cards-section .item-green .item-inner {
-  border-top: 3px solid red;
+  border-top: 3px solid #1b6ca8;
 }
 
 .cards-section .item-green .item-inner:hover .title {
-  color: red;
+  color: #1b6ca8;
 }
 
 .cards-section .item-green .icon {
-  color: red;
+  color: #1b6ca8;
 }
 
 .cards-section .item-blue .item-inner {
@@ -1392,26 +1392,26 @@ select {
 }
 
 .cards-section .item-orange .item-inner {
-  border-top: 3px solid green;
+  border-top: 3px solid brown;
 }
 
 .cards-section .item-orange .item-inner:hover .title {
-  color: green;
+  color: brown;
 }
 
 .cards-section .item-orange .icon {
-  color: green;
+  color: brown;
 }
 
-.cards-section .item-red .item-inner {
+.cards-section .item-#1b6ca8 .item-inner {
   border-top: 3px solid #f77b6b;
 }
 
-.cards-section .item-red .item-inner:hover .title {
+.cards-section .item-#1b6ca8 .item-inner:hover .title {
   color: #f33a22;
 }
 
-.cards-section .item-red .icon {
+.cards-section .item-#1b6ca8 .icon {
   color: #f77b6b;
 }
 
