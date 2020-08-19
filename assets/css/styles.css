@@ -12,6 +12,7 @@ body {
   font-family: 'Recursive', sans-serif;
   color: black;
   font-size: 17px;
+  letter-spacing: 1px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -283,27 +284,27 @@ select {
   color: #8950fa;
 }
 
-.body-green .branding .text-highlight {
-  color: #1b6ca8;
+.body-green{
+  color: black;
 }
 
-.body-blue .branding .text-highlight {
+.body-blue{
   color: #58bbee;
 }
 
-.body-orange .branding .text-highlight {
+.body-orange {
   color: brown;
 }
 
-.body-#1b6ca8 .branding .text-highlight {
+.body-orange2{
   color: #f77b6b;
 }
 
-.body-pink .branding .text-highlight {
+.body-pink {
   color: #EA5395;
 }
 
-.body-purple .branding .text-highlight {
+.body-purple  {
   color: #8A40A7;
 }
 
