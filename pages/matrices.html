@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>eduAlgo - LinkedList</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A very simple python package made with python scripts to study different algorithms for educational purposes.">
+  <meta name="author" content="Abhijit2505">
+  <meta property="og:image" content="assets/images/eduAlgo-doc.png" />
+  <link rel="shortcut icon" href="favicon.ico">
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/css2?family=Recursive&family=Zilla+Slab:wght@300&display=swap" rel="stylesheet">
+  <script defer src="../assets/fontawesome/js/all.js"></script>
+  <link rel="stylesheet" href="../assets/plugins/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../assets/plugins/prism/prism.css">
+  <link rel="stylesheet" href="../assets/plugins/elegant_font/css/style.css">
+  <link id="theme-style" rel="stylesheet" href="../assets/css/styles.css">
+</head>
+
+<body class="body-green">
+  <div class="page-wrapper">
+    <header id="header" class="header">
+      <div class="container">
+        <div class="branding">
+          <h1 class="logo">
+            <a href="index.html">
+              <span class="text-highlight">edu </span><span class="text-bold">Algo</span>
+            </a>
+          </h1>
+
+        </div>
+
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
+          <li class="breadcrumb-item"><a href="../start.html">Documentation</a></li>
+          <li class="breadcrumb-item"><a href="../algo.html">Algorithms</a></li>
+          <li class="breadcrumb-item active">
+            Matrices
+          </li>
+        </ol>
+
+        <div class="top-search-box">
+          <form class="form-inline search-form justify-content-center" action="" method="get">
+
+            <input type="text" placeholder="Search..." name="search" class="form-control search-input">
+
+            <button type="submit" class="btn search-btn" value="Search"><i class="fas fa-search"></i></button>
+          </form>
+        </div>
+      </div>
+    </header>
+    <div class="doc-wrapper">
+      <div class="container">
+        <div id="doc-header" class="doc-header text-center">
+          <h1 class="doc-title"><i class="icon fas fa-file-contract"></i> Matrices Implementations</h1>
+          <div class="meta"><i class="far fa-clock"></i> Last updated: 2nd Dec, 2020</div>
+        </div>
+        <div class="doc-body row">
+          <div class="doc-content col-md-9 col-12 order-1">
+            <div class="content-inner">
+                <section id="code-section" class="doc-section">
+                    <div class="section-block">
+                        <h5><u>Rotating a matrix</u></h5>
+                          <p>
+                            <b>Module:</b> matrices()<br />
+                            <b>Method :</b> <i>rotateImage(matrix,n,hint=False)</i><br />
+                            <b>Uses :</b> To rotate an input matrix, this function retruns nothing but changes the input matrix itself.<br />
+                            <b>Parameters :</b> <b>matrix</b> - a two dimensional array as python list, <b>n</b> is the number of rows in the matrix, <b>hint</b> is passed False by default, by declaring hint=True
+                            a detailed description of the rotation algorithm can be found.
+                          </p>
+                        <div class="code-block">
+                          <div id="python" class="section-block">
+                            <div class="code-block">
+                              <h6>Python Code Example</h6>
+                              <pre><code class="language-python">from edualgo import algorithms as al
+img_arr = [[1,2,3],[4,5,6],[7,8,9]]
+ping2 = al.matrices()
+ping2.rotateImage(img_arr,3)</code></pre>
+                              <pre><code class="language-python">Output:
+img_arr = [[7, 4, 1], [8, 5, 2], [9, 6, 3]]
+</code>
+    </pre>
+    <i>For getting the hint just pass hint=True in the function like - rotateImage(img_arr,n,True).</i>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="section-block">
+                        <h5><u>Set Zeros</u></h5>
+                          <p>
+                            <b>Module:</b> matrices()<br />
+                            <b>Method :</b> <i>setZeros(matrix,row,column)</i><br />
+                            <b>Uses :</b> This function sets the entire row and column of the matrix as zero if it encounters zero at any position of the matrix.
+                            This function returns nothing, the changes take place in the input matrix itself.<br />
+                            <b>Parameters :</b> <b>matrix</b> - a two dimensional array as python list, <b>row</b> - the number of rows in the matrix,<b>columns</b> - the number of columns in the matrix.
+                          </p>
+                        <div class="code-block">
+                          <div id="python" class="section-block">
+                            <div class="code-block">
+                              <h6>Python Code Example</h6>
+                              <pre><code class="language-python">from edualgo import algorithms as al
+img_arr = [[1,0,3],[4,5,6],[7,8,9]]
+ping2 = al.matrices()
+ping2.setZeros(img_arr,3,3)</code></pre>
+                              <pre><code class="language-python">Output:
+img_arr = [[0, 0, 0], [0, 5, 6], [0, 8, 9]]
+
+</code>
+    </pre>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                </section>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="promo-block" class="promo-block">
+      <div class="container">
+        <div class="promo-block-inner">
+          <h3 class="promo-title text-center"><i class="fas fa-code"></i> <a href="#">Are you an ambitious Python Developer ?</a></h3>
+          <div class="row">
+            <div class="figure-holder col-lg-5 col-md-6 col-12">
+              <div class="figure-holder-inner">
+                <a href="https://github.com/Abhijit2505/eduAlgo" target="_blank"><img class="img-fluid" src="assets/images/eduAlgogithub.PNG" alt="Instance Theme" /></a>
+                <a class="mask" href="https://github.com/Abhijit2505/eduAlgo" target="_blank"><i class="icon fas fa-star pink"></i></a>
+
+              </div>
+            </div>
+            <div class="content-holder col-lg-7 col-md-6 col-12">
+              <div class="content-holder-inner">
+                <div class="desc">
+                  <p>
+                    Do you want to contribute to our project ? We welcome every python lover to
+                    come forwards and have some fun with our source code.
+
+                    Steps to contibute:
+                    <ul>
+                      <li>
+                        Send an email to the developer <a href ="mailto:abhijittripathy99@gmail.com">here</a> regarding your willingness to contribute
+                        to the project.
+                      </li>
+                      <li>
+                        Have a read of our "How To Contribute" documentation <a href = "https://github.com/Abhijit2505/eduAlgo/blob/master/CONTRIBUTING.md">here</a>.
+                      </li>
+                    </ul>
+                    Keep coding, keep loving python <i class="fab fa-python"></i>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <footer class="footer text-center">
+    Copyright 2020 @<a href="https://github.com/Abhijit2505" target="_blank">Abhijit Tripathy</a>. Package Designed by <a href="https://github.com/Abhijit2505" target="_blank">Abhijit Tripathy</a> for python enthusiasts
+    [Theme Designed by <a href="https://themes.3rdwavemedia.com/" target="_blank">Xiaoying Riley</a>]
+  </footer>
+
+  <script type="text/javascript" src="../assets/plugins/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript" src="../assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="../assets/plugins/prism/prism.js"></script>
+  <script type="text/javascript" src="../assets/plugins/jquery-scrollTo/jquery.scrollTo.min.js"></script>
+  <script type="text/javascript" src=../assets/plugins/stickyfill/dist/stickyfill.min.js"></script>
+  <script type="text/javascript" src="../assets/js/main.js"></script>
+
+</body>
+
+</html>
