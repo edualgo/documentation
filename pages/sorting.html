@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>eduAlgo - Sorting</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A very simple python package made with python scripts to study different algorithms for educational purposes.">
+  <meta name="author" content="Abhijit2505">
+  <meta property="og:image" content="../assets/images/eduAlgo-doc.png" />
+  <link rel="shortcut icon" href="favicon.ico">
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/css2?family=Recursive&family=Zilla+Slab:wght@300&display=swap" rel="stylesheet">
+  <script defer src="../assets/fontawesome/js/all.js"></script>
+  <link rel="stylesheet" href="../assets/plugins/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../assets/plugins/prism/prism.css">
+  <link rel="stylesheet" href="../assets/plugins/elegant_font/css/style.css">
+  <link id="theme-style" rel="stylesheet" href="../assets/css/styles.css">
+</head>
+
+<body class="body-green">
+  <div class="page-wrapper">
+    <header id="header" class="header">
+      <div class="container">
+        <div class="branding">
+          <h1 class="logo">
+            <a href="index.html">
+              <span class="text-highlight">edu </span><span class="text-bold">Algo</span>
+            </a>
+          </h1>
+
+        </div>
+
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
+          <li class="breadcrumb-item"><a href="../start.html">Documentation</a></li>
+          <li class="breadcrumb-item"><a href="../algo.html">Algorithms</a></li>
+          <li class="breadcrumb-item active">
+            Sorting 
+          </li>
+        </ol>
+
+        <div class="top-search-box">
+          <form class="form-inline search-form justify-content-center" action="" method="get">
+
+            <input type="text" placeholder="Search..." name="search" class="form-control search-input">
+
+            <button type="submit" class="btn search-btn" value="Search"><i class="fas fa-search"></i></button>
+          </form>
+        </div>
+      </div>
+    </header>
+    <div class="doc-wrapper">
+      <div class="container">
+        <div id="doc-header" class="doc-header text-center">
+          <h1 class="doc-title"><i class="icon fas fa-file-contract"></i> Sorting Implementations</h1>
+          <div class="meta"><i class="far fa-clock"></i> Last updated: 2nd Dec, 2020</div>
+        </div>
+        <div class="doc-body row">
+          <div class="doc-content col-md-9 col-12 order-1">
+            <div class="content-inner">
+                <h2 style="color: brown"class="section-title">Bubble Sort</h2>
+                <section id="code-section" class="doc-section">
+                    <div class="section-block">
+                          <p>
+                            <b>Module:</b> sorting()<br />
+                            <b>Method :</b> <i>bubble_sort(arr,hint=False)</i><br />
+                            <b>Uses :</b> As the name suggests, this methods sorts the array as well as shows the time taken in seconds for sorting it. Also this method prints out the array after each iteration, so that one can visualize how bubble sort works.<br />
+                            <b>Parameters :</b> <b>arr</b> is an one dimensional array as python list,  
+                            <b>hint</b> is passed False by default, by declaring hint=True
+                            a detailed description of the bubble sort algorithm can be found.
+                          </p>
+                        <div class="code-block">
+                          <div id="python" class="section-block">
+                            <div class="code-block">
+                              <h6>Python Code Example</h6>
+                              <pre><code class="language-python">from edualgo import algorithms as al
+arr = [10,9,8,7,6]
+ping = al.sorting()
+ping.bubble_sort(arr)</code></pre>
+                              <pre><code class="language-python">Output:
+[9, 10, 8, 7, 6]
+[9, 8, 10, 7, 6]
+[9, 8, 7, 10, 6]
+[9, 8, 7, 6, 10]
+[8, 9, 7, 6, 10]
+[8, 7, 9, 6, 10]
+[8, 7, 6, 9, 10]
+[7, 8, 6, 9, 10]
+[7, 6, 8, 9, 10]
+[6, 7, 8, 9, 10]
+Bubble Sort Runtime = 0.0009982585906982422
+
+[6, 7, 8, 9, 10]
+</code>
+    </pre>
+    <i>For getting the hint just pass hint=True in the function like - bubble_sort(arr,True).</i>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <h2 style="color: brown"class="section-title">Selection Sort</h2>
+                      <div class="section-block">
+                          <p>
+                            <b>Module:</b> sorting()<br />
+                            <b>Method :</b> <i>selection_sort(arr,hint=False)</i><br />
+                            <b>Uses :</b> As the name suggests, this methods sorts the array as well as shows the time taken in seconds for sorting it. Also this method prints out the array after each iteration, so that one can visualize how selection sort works.<br />
+                            <b>Parameters :</b> <b>arr</b> is an one dimensional array as python list,  
+                            <b>hint</b> is passed False by default, by declaring hint=True
+                            a detailed description of the selection sort algorithm can be found.
+                          </p>
+                        <div class="code-block">
+                          <div id="python" class="section-block">
+                            <div class="code-block">
+                              <h6>Python Code Example</h6>
+                              <pre><code class="language-python">from edualgo import algorithms as al
+arr = [10,9,8,7,6,5,4]
+ping = al.sorting()
+ping.selection_sort(arr)</code></pre>
+                              <pre><code class="language-python">Output:
+[4, 9, 8, 7, 6, 5, 10]
+[4, 5, 8, 7, 6, 9, 10]
+[4, 5, 6, 7, 8, 9, 10]
+[4, 5, 6, 7, 8, 9, 10]
+[4, 5, 6, 7, 8, 9, 10]
+[4, 5, 6, 7, 8, 9, 10]
+Selection Sort Runtime = 0.0
+
+[4, 5, 6, 7, 8, 9, 10]
+
+</code>
+    </pre>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <h2 style="color: brown"class="section-title">Bogo Sort</h2>
+                      <div class="section-block">
+                          <p>
+                            <b>Module:</b> sorting()<br />
+                            <b>Method :</b> <i>bogo_sort(arr,asc=True,hint=False)</i><br />
+                            <b>Uses :</b> As the name suggests, this methods sorts the array as well as shows the time taken in seconds for sorting it. <br />
+                            <b>Parameters :</b> <b>arr</b> is an one dimensional array as python list,  
+                            <b>asc</b> is passed True by default, which determines the ascending or descending order, when passed as False, it sorts in the descending order,
+                            <b>hint</b> is passed False by default, by declaring hint=True
+                            a detailed description of the selection sort algorithm can be found.
+                          </p>
+                        <div class="code-block">
+                          <div id="python" class="section-block">
+                            <div class="code-block">
+                              <h6>Python Code Example</h6>
+                              <pre><code class="language-python">#for sorting in ascending order
+from edualgo import algorithms as al
+arr = [10,8,6,7,9,5,1,4]
+ping = al.sorting()
+ping.bogo_sort(arr,True)
+
+#for sorting in descending order
+ping.bogo_sort(arr,False)
+
+</code></pre>
+                              <pre><code class="language-python">Output:
+#for ascending order
+Bogo Sort Runtime = 0.8378016948699951
+
+array([ 1,  4,  5,  6,  7,  8,  9, 10])
+
+#for descending order
+Bogo Sort Runtime = 0.8386266231536865
+
+array([10,  9,  8,  7,  6,  5,  4,  1])
+
+</code>
+    </pre>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <h2 style="color: brown"class="section-title">Insertion Sort</h2>
+                      <div class="section-block">
+                          <p>
+                            <b>Module:</b> sorting()<br />
+                            <b>Method :</b> <i>insertion_sort(arr,hint=False)</i><br />
+                            <b>Uses :</b> As the name suggests, this methods sorts the array as well as shows the time taken in seconds for sorting it. Also this method prints out the array after each iteration, so that one can visualize how insertion sort works.<br />
+                            <b>Parameters :</b> <b>arr</b> is an one dimensional array as python list,  
+                            <b>hint</b> is passed False by default, by declaring hint=True
+                            a detailed description of the selection sort algorithm can be found.
+                          </p>
+                        <div class="code-block">
+                          <div id="python" class="section-block">
+                            <div class="code-block">
+                              <h6>Python Code Example</h6>
+                              <pre><code class="language-python">from edualgo import algorithms as al
+arr = [10,8,6,7,9,5,1,4]
+ping = al.sorting()
+ping.insertion_sort(arr)</code></pre>
+                              <pre><code class="language-python">Output:
+[8, 10, 6, 7, 9, 5, 1, 4]
+[6, 8, 10, 7, 9, 5, 1, 4]
+[6, 7, 8, 10, 9, 5, 1, 4]
+[6, 7, 8, 9, 10, 5, 1, 4]
+[5, 6, 7, 8, 9, 10, 1, 4]
+[1, 5, 6, 7, 8, 9, 10, 4]
+[1, 4, 5, 6, 7, 8, 9, 10]
+Insertion Sort Runtime = 0.0
+
+[1, 4, 5, 6, 7, 8, 9, 10]
+
+</code>
+    </pre>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <h2 style="color: brown"class="section-title">Merge Sort</h2>
+                      <div class="section-block">
+                          <p>
+                            <b>Module:</b> sorting()<br />
+                            <b>Method :</b> <i>merge_sort(arr,hint=False)</i><br />
+                            <b>Uses :</b> As the name suggests, this methods sorts the array as well as shows the time taken in seconds for sorting it. <br />
+                            <b>Parameters :</b> <b>arr</b> is an one dimensional array as python list,  
+                            <b>hint</b> is passed False by default, by declaring hint=True
+                            a detailed description of the merge sort algorithm can be found.
+                          </p>
+                        <div class="code-block">
+                          <div id="python" class="section-block">
+                            <div class="code-block">
+                              <h6>Python Code Example</h6>
+                              <pre><code class="language-python">from edualgo import algorithms as al
+arr = [10,8,6,7,9,5,1,4]
+ping = al.sorting()
+ping.merge_sort(arr)</code></pre>
+                              <pre><code class="language-python">Output:
+Merge Sort Runtime = 0.0
+
+[1, 4, 5, 6, 7, 8, 9, 10]
+</code>
+    </pre>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <h2 style="color: brown"class="section-title">Heap Sort</h2>
+                      <div class="section-block">
+                          <p>
+                            <b>Module:</b> sorting()<br />
+                            <b>Method :</b> <i>heap_sort(arr,hint=False)</i><br />
+                            <b>Uses :</b> As the name suggests, this methods sorts the array as well as shows the time taken in seconds for sorting it. <br />
+                            <b>Parameters :</b> <b>arr</b> is an one dimensional array as python list,  
+                            <b>hint</b> is passed False by default, by declaring hint=True
+                            a detailed description of the merge sort algorithm can be found.
+                          </p>
+                        <div class="code-block">
+                          <div id="python" class="section-block">
+                            <div class="code-block">
+                              <h6>Python Code Example</h6>
+                              <pre><code class="language-python">from edualgo import algorithms as al
+arr = [10,8,6,7,9,5,1,4]
+ping = al.sorting()
+ping.heap_sort(arr)</code></pre>
+                              <pre><code class="language-python">Output:
+[1, 4, 5, 6, 7, 8, 9, 10]
+Heap Sort Runtime = 0.0
+</code>
+    </pre>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                </section>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="promo-block" class="promo-block">
+      <div class="container">
+        <div class="promo-block-inner">
+          <h3 class="promo-title text-center"><i class="fas fa-code"></i> <a href="#">Are you an ambitious Python Developer ?</a></h3>
+          <div class="row">
+            <div class="figure-holder col-lg-5 col-md-6 col-12">
+              <div class="figure-holder-inner">
+                <a href="https://github.com/Abhijit2505/eduAlgo" target="_blank"><img class="img-fluid" src="../assets/images/eduAlgogithub.PNG" alt="Instance Theme" /></a>
+                <a class="mask" href="https://github.com/Abhijit2505/eduAlgo" target="_blank"><i class="icon fas fa-star pink"></i></a>
+
+              </div>
+            </div>
+            <div class="content-holder col-lg-7 col-md-6 col-12">
+              <div class="content-holder-inner">
+                <div class="desc">
+                  <p>
+                    Do you want to contribute to our project ? We welcome every python lover to
+                    come forwards and have some fun with our source code.
+
+                    Steps to contibute:
+                    <ul>
+                      <li>
+                        Send an email to the developer <a href ="mailto:abhijittripathy99@gmail.com">here</a> regarding your willingness to contribute
+                        to the project.
+                      </li>
+                      <li>
+                        Have a read of our "How To Contribute" documentation <a href = "https://github.com/Abhijit2505/eduAlgo/blob/master/CONTRIBUTING.md">here</a>.
+                      </li>
+                    </ul>
+                    Keep coding, keep loving python <i class="fab fa-python"></i>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <footer class="footer text-center">
+    Copyright 2020 @<a href="https://github.com/Abhijit2505" target="_blank">Abhijit Tripathy</a>. Package Designed by <a href="https://github.com/Abhijit2505" target="_blank">Abhijit Tripathy</a> for python enthusiasts
+    [Theme Designed by <a href="https://themes.3rdwavemedia.com/" target="_blank">Xiaoying Riley</a>]
+  </footer>
+
+  <script type="text/javascript" src="../assets/plugins/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript" src="../assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="../assets/plugins/prism/prism.js"></script>
+  <script type="text/javascript" src="../assets/plugins/jquery-scrollTo/jquery.scrollTo.min.js"></script>
+  <script type="text/javascript" src=../assets/plugins/stickyfill/dist/stickyfill.min.js"></script>
+  <script type="text/javascript" src="../assets/js/main.js"></script>
+
+</body>
+
+</html>
