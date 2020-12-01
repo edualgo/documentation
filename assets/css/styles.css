@@ -8,6 +8,14 @@
  * Website: http://themes.3rdwavemedia.com/
 */
 /* ======= Base ======= */
+.sf-snow-flake {
+  position: fixed;
+  top: -20px;
+  z-index: 99999;
+  }
+  .sf-snow-anim {
+  top: 110%;
+  }
 body {
   font-family: 'Recursive', sans-serif;
   color: black;
