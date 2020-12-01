@@ -90,7 +90,7 @@ ping.bubble_sort(arr)</code></pre>
 [7, 8, 6, 9, 10]
 [7, 6, 8, 9, 10]
 [6, 7, 8, 9, 10]
-Bubble Sort Runtime = 0.0009982585906982422
+Bubble Sort Runtime = 0.0009982585906982422 seconds
 
 [6, 7, 8, 9, 10]
 </code>
@@ -125,7 +125,7 @@ ping.selection_sort(arr)</code></pre>
 [4, 5, 6, 7, 8, 9, 10]
 [4, 5, 6, 7, 8, 9, 10]
 [4, 5, 6, 7, 8, 9, 10]
-Selection Sort Runtime = 0.0
+Selection Sort Runtime = 0.0 seconds
 
 [4, 5, 6, 7, 8, 9, 10]
 
@@ -162,12 +162,12 @@ ping.bogo_sort(arr,False)
 </code></pre>
                               <pre><code class="language-python">Output:
 #for ascending order
-Bogo Sort Runtime = 0.8378016948699951
+Bogo Sort Runtime = 0.8378016948699951 seconds
 
 array([ 1,  4,  5,  6,  7,  8,  9, 10])
 
 #for descending order
-Bogo Sort Runtime = 0.8386266231536865
+Bogo Sort Runtime = 0.8386266231536865 seconds
 
 array([10,  9,  8,  7,  6,  5,  4,  1])
 
@@ -203,7 +203,7 @@ ping.insertion_sort(arr)</code></pre>
 [5, 6, 7, 8, 9, 10, 1, 4]
 [1, 5, 6, 7, 8, 9, 10, 4]
 [1, 4, 5, 6, 7, 8, 9, 10]
-Insertion Sort Runtime = 0.0
+Insertion Sort Runtime = 0.0 seconds
 
 [1, 4, 5, 6, 7, 8, 9, 10]
 
@@ -232,7 +232,7 @@ arr = [10,8,6,7,9,5,1,4]
 ping = al.sorting()
 ping.merge_sort(arr)</code></pre>
                               <pre><code class="language-python">Output:
-Merge Sort Runtime = 0.0
+Merge Sort Runtime = 0.0 seconds
 
 [1, 4, 5, 6, 7, 8, 9, 10]
 </code>
@@ -261,7 +261,34 @@ ping = al.sorting()
 ping.heap_sort(arr)</code></pre>
                               <pre><code class="language-python">Output:
 [1, 4, 5, 6, 7, 8, 9, 10]
-Heap Sort Runtime = 0.0
+Heap Sort Runtime = 0.0 seconds
+</code>
+    </pre>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <h2 style="color: brown"class="section-title">Quick Sort</h2>
+                      <div class="section-block">
+                          <p>
+                            <b>Module:</b> sorting()<br />
+                            <b>Method :</b> <i>quick_sort(arr,hint=False)</i><br />
+                            <b>Uses :</b> As the name suggests, this methods sorts the array as well as shows the time taken in seconds for sorting it. <br />
+                            <b>Parameters :</b> <b>arr</b> is an one dimensional array as python list,  
+                            <b>hint</b> is passed False by default, by declaring hint=True
+                            a detailed description of the quick sort algorithm can be found.
+                          </p>
+                        <div class="code-block">
+                          <div id="python" class="section-block">
+                            <div class="code-block">
+                              <h6>Python Code Example</h6>
+                              <pre><code class="language-python">from edualgo import algorithms as al
+arr = [10,8,6,7,9,5,1,4]
+ping = al.sorting()
+ping.quick_sort(arr)</code></pre>
+                              <pre><code class="language-python">Output:
+[1, 4, 5, 6, 7, 8, 9, 10]
+Quick Sort Runtime = 0.0 seconds
 </code>
     </pre>
                             </div>
