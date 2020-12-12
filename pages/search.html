@@ -6,12 +6,16 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="A very simple python package made with python scripts to study different algorithms for educational purposes.">
+  <meta name="description"
+    content="A very simple python package made with python scripts to study different algorithms for educational purposes.">
   <meta name="author" content="Abhijit2505">
   <meta property="og:image" content="../assets/images/eduAlgo-doc.png" />
   <link rel="shortcut icon" href="favicon.ico">
-  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
-  <link href="https://fonts.googleapis.com/css2?family=Recursive&family=Zilla+Slab:wght@300&display=swap" rel="stylesheet">
+  <link
+    href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800'
+    rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/css2?family=Recursive&family=Zilla+Slab:wght@300&display=swap"
+    rel="stylesheet">
   <script defer src="../assets/fontawesome/js/all.js"></script>
   <link rel="stylesheet" href="../assets/plugins/bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="../assets/plugins/prism/prism.css">
@@ -29,13 +33,15 @@
               <span class="text-highlight">edu </span><span class="text-bold">Algo</span>
             </a>
           </h1>
-
+          <a id="sidebarCollapse" class="menu-btn">
+            <i class="fas fa-bars"></i>
+          </a>
         </div>
 
         <ol class="breadcrumb">
           <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
           <li class="breadcrumb-item"><a href="../start.html">Documentation</a></li>
-          <li class="breadcrumb-item"><a href="../algo.html">Algorithms</a></li>
+          <li class="breadcrumb-item"><a href="../start.html">Algorithms</a></li>
           <li class="breadcrumb-item active">
             Search Algortihms
           </li>
@@ -51,7 +57,45 @@
         </div>
       </div>
     </header>
-    <div class="doc-wrapper">
+    <div class="doc-wrapper" style="display: flex;">
+      <nav id="sidebar">
+        <ul class="list-unstyled components">
+          <li class="active">
+            <a class="nav-link dropdown-toggle" data-toggle="collapse" aria-expanded="false"
+              href="#installation-menu">Installation</a>
+            <ul class="collapse list-unstyled" id="installation-menu">
+              <li><a class="nav-link scrollto" href="../start.html#step1">Option - 1</a></li>
+              <li><a class="nav-link scrollto" href="../start.html#step2">Option - 2</a></li>
+            </ul>
+          </li>
+          <li>
+            <a class="nav-link scrollto" href="../start.html#download-section">Download</a>
+          </li>
+          <li>
+            <a class="nav-link dropdown-toggle" data-toggle="collapse" aria-expanded="false"
+              href="#algorithm-menu">Algorithms</a>
+            <ul class="collapse list-unstyled" id="algorithm-menu">
+              <li><a class="nav-link" href="./matrices.html">Matrices</a></li>
+              <li><a class="nav-link" href="./sorting.html">Sorting</a></li>
+              <li><a class="nav-link" href="./search.html">Searching</a></li>
+              <li><a class="nav-link" href="./string.html">String</a></li>
+              <li><a class="nav-link" href="./greedy.html">Greedy Methods</a></li>
+            </ul>
+          </li>
+          <li>
+            <a class="nav-link" href="../linkedlist.html">Linked List</a>
+          </li>
+          <li>
+            <a class="nav-link" href="../binarytree.html">Binary Tree</a>
+          </li>
+          <li>
+            <a class="nav-link" href="../notworking.html">Stack</a>
+          </li>
+          <li>
+            <a class="nav-link" href="../notworking.html">Queue</a>
+          </li>
+        </ul>
+      </nav>
       <div class="container">
         <div id="doc-header" class="doc-header text-center">
           <h1 class="doc-title"><i class="icon fas fa-file-contract"></i> Searching Implementations</h1>
@@ -60,63 +104,65 @@
         <div class="doc-body row">
           <div class="doc-content col-md-9 col-12 order-1">
             <div class="content-inner">
-                <section id="code-section" class="doc-section">
-                    <h2 style="color: brown"class="section-title">Linear Search</h2>
-                    <div class="section-block">
-                          <p>
-                            <b>Module:</b>search_algorithms()<br />
-                            <b>Method :</b> <i>linear_search(arr,key,hint=False)</i><br />
-                            <b>Uses :</b> To search the key value in the array andd return it's position once found, this method also shows the time taken to run the program.<br />
-                            <b>Parameters :</b> <b>arr</b> - an one dimensional array as python list, 
-                            <b>key</b> is the key value to be searched in the array, 
-                            <b>hint</b> is passed False by default, by declaring hint=True
-                            a detailed description of the linear search algorithm can be found.
-                          </p>
-                        <div class="code-block">
-                          <div id="python" class="section-block">
-                            <div class="code-block">
-                              <h6>Python Code Example</h6>
-                              <pre><code class="language-python">from edualgo import algorithms as al
+              <section id="code-section" class="doc-section">
+                <h2 style="color: brown" class="section-title">Linear Search</h2>
+                <div class="section-block">
+                  <p>
+                    <b>Module:</b>search_algorithms()<br />
+                    <b>Method :</b> <i>linear_search(arr,key,hint=False)</i><br />
+                    <b>Uses :</b> To search the key value in the array andd return it's position once found, this method
+                    also shows the time taken to run the program.<br />
+                    <b>Parameters :</b> <b>arr</b> - an one dimensional array as python list,
+                    <b>key</b> is the key value to be searched in the array,
+                    <b>hint</b> is passed False by default, by declaring hint=True
+                    a detailed description of the linear search algorithm can be found.
+                  </p>
+                  <div class="code-block">
+                    <div id="python" class="section-block">
+                      <div class="code-block">
+                        <h6>Python Code Example</h6>
+                        <pre><code class="language-python">from edualgo import algorithms as al
 ping = al.search_algorithms()
 arr = [10,9,4,5,7,8]
 ping.linear_search(arr,5)</code></pre>
-                              <pre><code class="language-python">Output:
+                        <pre><code class="language-python">Output:
 Linear Search Runtime = 0.0
 
 3
 </code>
     </pre>
-    <i>For getting the hint just pass hint=True in the function like - linear_search(arr,key,True).</i>
-                            </div>
-                          </div>
-                        </div>
+                        <i>For getting the hint just pass hint=True in the function like -
+                          linear_search(arr,key,True).</i>
                       </div>
-                      <h2 style="color: brown"class="section-title">Binary Search</h2>
-                    <div class="section-block">
-                          <p>
-                            <b>Module:</b>search_algorithms()<br />
-                            <b>Method :</b> <i>binary_search(arr,key)</i><br />
-                            <b>Uses :</b> To search the key value in the array andd return it's position once found<br />
-                            <b>Parameters :</b> <b>arr</b> - an one dimensional array as python list, 
-                            <b>key</b> is the key value to be searched in the array.
-                          </p>
-                        <div class="code-block">
-                          <div id="python" class="section-block">
-                            <div class="code-block">
-                              <h6>Python Code Example</h6>
-                              <pre><code class="language-python">from edualgo import algorithms as al
+                    </div>
+                  </div>
+                </div>
+                <h2 style="color: brown" class="section-title">Binary Search</h2>
+                <div class="section-block">
+                  <p>
+                    <b>Module:</b>search_algorithms()<br />
+                    <b>Method :</b> <i>binary_search(arr,key)</i><br />
+                    <b>Uses :</b> To search the key value in the array andd return it's position once found<br />
+                    <b>Parameters :</b> <b>arr</b> - an one dimensional array as python list,
+                    <b>key</b> is the key value to be searched in the array.
+                  </p>
+                  <div class="code-block">
+                    <div id="python" class="section-block">
+                      <div class="code-block">
+                        <h6>Python Code Example</h6>
+                        <pre><code class="language-python">from edualgo import algorithms as al
 ping = al.search_algorithms()
 arr = [10,9,4,5,7,8]
 ping.binary_search(arr,5)</code></pre>
-                              <pre><code class="language-python">Output:
+                        <pre><code class="language-python">Output:
 3
 </code>
 </pre>
-                            </div>
-                          </div>
-                        </div>
                       </div>
-                </section>
+                    </div>
+                  </div>
+                </div>
+              </section>
             </div>
           </div>
         </div>
@@ -126,12 +172,15 @@ ping.binary_search(arr,5)</code></pre>
     <div id="promo-block" class="promo-block">
       <div class="container">
         <div class="promo-block-inner">
-          <h3 class="promo-title text-center"><i class="fas fa-code"></i> <a href="#">Are you an ambitious Python Developer ?</a></h3>
+          <h3 class="promo-title text-center"><i class="fas fa-code"></i> <a href="#">Are you an ambitious Python
+              Developer ?</a></h3>
           <div class="row">
             <div class="figure-holder col-lg-5 col-md-6 col-12">
               <div class="figure-holder-inner">
-                <a href="https://github.com/Abhijit2505/eduAlgo" target="_blank"><img class="img-fluid" src="../assets/images/eduAlgogithub.PNG" alt="Instance Theme" /></a>
-                <a class="mask" href="https://github.com/Abhijit2505/eduAlgo" target="_blank"><i class="icon fas fa-star pink"></i></a>
+                <a href="https://github.com/Abhijit2505/eduAlgo" target="_blank"><img class="img-fluid"
+                    src="../assets/images/eduAlgogithub.PNG" alt="Instance Theme" /></a>
+                <a class="mask" href="https://github.com/Abhijit2505/eduAlgo" target="_blank"><i
+                    class="icon fas fa-star pink"></i></a>
 
               </div>
             </div>
@@ -143,16 +192,18 @@ ping.binary_search(arr,5)</code></pre>
                     come forwards and have some fun with our source code.
 
                     Steps to contibute:
-                    <ul>
-                      <li>
-                        Send an email to the developer <a href ="mailto:abhijittripathy99@gmail.com">here</a> regarding your willingness to contribute
-                        to the project.
-                      </li>
-                      <li>
-                        Have a read of our "How To Contribute" documentation <a href = "https://github.com/Abhijit2505/eduAlgo/blob/master/CONTRIBUTING.md">here</a>.
-                      </li>
-                    </ul>
-                    Keep coding, keep loving python <i class="fab fa-python"></i>
+                  <ul>
+                    <li>
+                      Send an email to the developer <a href="mailto:abhijittripathy99@gmail.com">here</a> regarding
+                      your willingness to contribute
+                      to the project.
+                    </li>
+                    <li>
+                      Have a read of our "How To Contribute" documentation <a
+                        href="https://github.com/Abhijit2505/eduAlgo/blob/master/CONTRIBUTING.md">here</a>.
+                    </li>
+                  </ul>
+                  Keep coding, keep loving python <i class="fab fa-python"></i>
                   </p>
                 </div>
               </div>
@@ -166,7 +217,8 @@ ping.binary_search(arr,5)</code></pre>
 
 
   <footer class="footer text-center">
-    Copyright 2020 @<a href="https://github.com/Abhijit2505" target="_blank">Abhijit Tripathy</a>. Package Designed by <a href="https://github.com/Abhijit2505" target="_blank">Abhijit Tripathy</a> for python enthusiasts
+    Copyright 2020 @<a href="https://github.com/Abhijit2505" target="_blank">Abhijit Tripathy</a>. Package Designed by
+    <a href="https://github.com/Abhijit2505" target="_blank">Abhijit Tripathy</a> for python enthusiasts
     [Theme Designed by <a href="https://themes.3rdwavemedia.com/" target="_blank">Xiaoying Riley</a>]
   </footer>
 
