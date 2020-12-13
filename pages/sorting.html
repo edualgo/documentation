@@ -21,6 +21,7 @@
   <link rel="stylesheet" href="../assets/plugins/prism/prism.css">
   <link rel="stylesheet" href="../assets/plugins/elegant_font/css/style.css">
   <link id="theme-style" rel="stylesheet" href="../assets/css/styles.css">
+  <link id="theme-style" rel="stylesheet" href="../assets/css/sidenav.css">
 </head>
 
 <body class="body-green">
@@ -33,7 +34,7 @@
               <span class="text-highlight">edu </span><span class="text-bold">Algo</span>
             </a>
           </h1>
-          <a id="sidebarCollapse" class="menu-btn">
+          <a id="navbarCollapse" class="menu-btn">
             <i class="fas fa-bars"></i>
           </a>
         </div>
@@ -57,56 +58,21 @@
         </div>
       </div>
     </header>
-    <div class="doc-wrapper" style="display: flex;">
-      <nav id="sidebar">
-        <ul class="list-unstyled components">
-          <li class="active">
-            <a class="nav-link dropdown-toggle" data-toggle="collapse" aria-expanded="false"
-              href="#installation-menu">Installation</a>
-            <ul class="collapse list-unstyled" id="installation-menu">
-              <li><a class="nav-link scrollto" href="../start.html#step1">Option - 1</a></li>
-              <li><a class="nav-link scrollto" href="../start.html#step2">Option - 2</a></li>
-            </ul>
-          </li>
-          <li>
-            <a class="nav-link scrollto" href="../start.html#download-section">Download</a>
-          </li>
-          <li>
-            <a class="nav-link dropdown-toggle" data-toggle="collapse" aria-expanded="false"
-              href="#algorithm-menu">Algorithms</a>
-            <ul class="collapse list-unstyled" id="algorithm-menu">
-              <li><a class="nav-link" href="./matrices.html">Matrices</a></li>
-              <li><a class="nav-link" href="./sorting.html">Sorting</a></li>
-              <li><a class="nav-link" href="./search.html">Searching</a></li>
-              <li><a class="nav-link" href="./string.html">String</a></li>
-              <li><a class="nav-link" href="./greedy.html">Greedy Methods</a></li>
-            </ul>
-          </li>
-          <li>
-            <a class="nav-link" href="../linkedlist.html">Linked List</a>
-          </li>
-          <li>
-            <a class="nav-link" href="../binarytree.html">Binary Tree</a>
-          </li>
-          <li>
-            <a class="nav-link" href="../notworking.html">Stack</a>
-          </li>
-          <li>
-            <a class="nav-link" href="../notworking.html">Queue</a>
-          </li>
-        </ul>
+    <div class="doc-wrapper">
+      <nav id="navbar">
+        
       </nav>
-      <div class="container">
+      <div class="container" id="mainContent">
         <div id="doc-header" class="doc-header text-center">
           <h1 class="doc-title"><i class="icon fas fa-file-contract"></i> Sorting Implementations</h1>
           <div class="meta"><i class="far fa-clock"></i> Last updated: 2nd Dec, 2020</div>
         </div>
         <div class="doc-body row">
-          <div class="doc-content col-md-9 col-12 order-1">
+          <div class="doc-content col-md-9 col-12 order-0">
             <div class="content-inner">
               <h2 style="color: brown" class="section-title">Bubble Sort</h2>
               <section id="code-section" class="doc-section">
-                <div class="section-block">
+                <div class="section-block" id="bubble-sort">
                   <p>
                     <b>Module:</b> sorting()<br />
                     <b>Method :</b> <i>bubble_sort(arr,hint=False)</i><br />
@@ -124,7 +90,7 @@
                         <pre><code class="language-python">from edualgo import algorithms as al
 arr = [10,9,8,7,6]
 ping = al.sorting()
-ping.bubble_sort(arr)</code></pre>
+ping.bubble_sort(arr)</code> <div class="tooltip" id="copy-btn"><a class="copy-btn"><span class="tooltiptext" id="tooltip">Copy to clipboard</span><i class="icon far fa-copy"></i></a></div></pre>
                         <pre><code class="language-python">Output:
 [9, 10, 8, 7, 6]
 [9, 8, 10, 7, 6]
@@ -147,7 +113,7 @@ Bubble Sort Runtime = 0.0009982585906982422 seconds
                   </div>
                 </div>
                 <h2 style="color: brown" class="section-title">Selection Sort</h2>
-                <div class="section-block">
+                <div class="section-block" id="selection-sort">
                   <p>
                     <b>Module:</b> sorting()<br />
                     <b>Method :</b> <i>selection_sort(arr,hint=False)</i><br />
@@ -165,7 +131,7 @@ Bubble Sort Runtime = 0.0009982585906982422 seconds
                         <pre><code class="language-python">from edualgo import algorithms as al
 arr = [10,9,8,7,6,5,4]
 ping = al.sorting()
-ping.selection_sort(arr)</code></pre>
+ping.selection_sort(arr)</code> <div class="tooltip" id="copy-btn"><a class="copy-btn"><span class="tooltiptext" id="tooltip">Copy to clipboard</span><i class="icon far fa-copy"></i></a></div></pre>
                         <pre><code class="language-python">Output:
 [4, 9, 8, 7, 6, 5, 10]
 [4, 5, 8, 7, 6, 9, 10]
@@ -184,7 +150,7 @@ Selection Sort Runtime = 0.0 seconds
                   </div>
                 </div>
                 <h2 style="color: brown" class="section-title">Bogo Sort</h2>
-                <div class="section-block">
+                <div class="section-block" id="bogo-sort">
                   <p>
                     <b>Module:</b> sorting()<br />
                     <b>Method :</b> <i>bogo_sort(arr,asc=True,hint=False)</i><br />
@@ -209,7 +175,7 @@ ping.bogo_sort(arr,True)
 #for sorting in descending order
 ping.bogo_sort(arr,False)
 
-</code></pre>
+</code> <div class="tooltip" id="copy-btn"><a class="copy-btn"><span class="tooltiptext" id="tooltip">Copy to clipboard</span><i class="icon far fa-copy"></i></a></div></pre>
                         <pre><code class="language-python">Output:
 #for ascending order
 Bogo Sort Runtime = 0.8378016948699951 seconds
@@ -228,7 +194,7 @@ array([10,  9,  8,  7,  6,  5,  4,  1])
                   </div>
                 </div>
                 <h2 style="color: brown" class="section-title">Insertion Sort</h2>
-                <div class="section-block">
+                <div class="section-block" id="insertion-sort">
                   <p>
                     <b>Module:</b> sorting()<br />
                     <b>Method :</b> <i>insertion_sort(arr,hint=False)</i><br />
@@ -246,7 +212,7 @@ array([10,  9,  8,  7,  6,  5,  4,  1])
                         <pre><code class="language-python">from edualgo import algorithms as al
 arr = [10,8,6,7,9,5,1,4]
 ping = al.sorting()
-ping.insertion_sort(arr)</code></pre>
+ping.insertion_sort(arr)</code> <div class="tooltip" id="copy-btn"><a class="copy-btn"><span class="tooltiptext" id="tooltip">Copy to clipboard</span><i class="icon far fa-copy"></i></a></div></pre>
                         <pre><code class="language-python">Output:
 [8, 10, 6, 7, 9, 5, 1, 4]
 [6, 8, 10, 7, 9, 5, 1, 4]
@@ -266,7 +232,7 @@ Insertion Sort Runtime = 0.0 seconds
                   </div>
                 </div>
                 <h2 style="color: brown" class="section-title">Merge Sort</h2>
-                <div class="section-block">
+                <div class="section-block" id="merge-sort">
                   <p>
                     <b>Module:</b> sorting()<br />
                     <b>Method :</b> <i>merge_sort(arr,hint=False)</i><br />
@@ -283,7 +249,7 @@ Insertion Sort Runtime = 0.0 seconds
                         <pre><code class="language-python">from edualgo import algorithms as al
 arr = [10,8,6,7,9,5,1,4]
 ping = al.sorting()
-ping.merge_sort(arr)</code></pre>
+ping.merge_sort(arr)</code> <div class="tooltip" id="copy-btn"><a class="copy-btn"><span class="tooltiptext" id="tooltip">Copy to clipboard</span><i class="icon far fa-copy"></i></a></div></pre>
                         <pre><code class="language-python">Output:
 Merge Sort Runtime = 0.0 seconds
 
@@ -295,7 +261,7 @@ Merge Sort Runtime = 0.0 seconds
                   </div>
                 </div>
                 <h2 style="color: brown" class="section-title">Heap Sort</h2>
-                <div class="section-block">
+                <div class="section-block" id="heap-sort">
                   <p>
                     <b>Module:</b> sorting()<br />
                     <b>Method :</b> <i>heap_sort(arr,hint=False)</i><br />
@@ -312,7 +278,7 @@ Merge Sort Runtime = 0.0 seconds
                         <pre><code class="language-python">from edualgo import algorithms as al
 arr = [10,8,6,7,9,5,1,4]
 ping = al.sorting()
-ping.heap_sort(arr)</code></pre>
+ping.heap_sort(arr)</code> <div class="tooltip" id="copy-btn"><a class="copy-btn"><span class="tooltiptext" id="tooltip">Copy to clipboard</span><i class="icon far fa-copy"></i></a></div></pre>
                         <pre><code class="language-python">Output:
 [1, 4, 5, 6, 7, 8, 9, 10]
 Heap Sort Runtime = 0.0 seconds
@@ -323,7 +289,7 @@ Heap Sort Runtime = 0.0 seconds
                   </div>
                 </div>
                 <h2 style="color: brown" class="section-title">Quick Sort</h2>
-                <div class="section-block">
+                <div class="section-block" id="quick-sort">
                   <p>
                     <b>Module:</b> sorting()<br />
                     <b>Method :</b> <i>quick_sort(arr,hint=False)</i><br />
@@ -340,7 +306,7 @@ Heap Sort Runtime = 0.0 seconds
                         <pre><code class="language-python">from edualgo import algorithms as al
 arr = [10,8,6,7,9,5,1,4]
 ping = al.sorting()
-ping.quick_sort(arr)</code></pre>
+ping.quick_sort(arr)</code> <div class="tooltip" id="copy-btn"><a class="copy-btn"><span class="tooltiptext" id="tooltip">Copy to clipboard</span><i class="icon far fa-copy"></i></a></div></pre>
                         <pre><code class="language-python">Output:
 [1, 4, 5, 6, 7, 8, 9, 10]
 Quick Sort Runtime = 0.0 seconds
@@ -351,6 +317,24 @@ Quick Sort Runtime = 0.0 seconds
                   </div>
                 </div>
               </section>
+            </div>
+          </div>
+
+          <div class="doc-sidebar col-md-3 col-12 order-1 d-none d-md-flex">
+            <div id="doc-nav" class="doc-nav">
+              <nav id="doc-menu" class="nav doc-menu flex-column sticky">
+                <a class="nav-link scrollto" href="#code-section">Sorting Implementations</a>
+                <nav class="doc-sub-menu nav flex-column">
+                  <a class="nav-link scrollto" href="#bubble-sort">Bubble Sort</a>
+                  <a class="nav-link scrollto" href="#selection-sort">Selection Sort</a>
+                  <a class="nav-link scrollto" href="#bogo-sort">Bogo Sort</a>
+                  <a class="nav-link scrollto" href="#insertion-sort">Insertion Sort</a>
+                  <a class="nav-link scrollto" href="#merge-sort">Merge Sort</a>
+                  <a class="nav-link scrollto" href="#heap-sort">Heap Sort</a>
+                  <a class="nav-link scrollto" href="#quick-sort">Quick Sort</a>
+                </nav>
+              </nav>
+
             </div>
           </div>
         </div>

@@ -53,6 +53,48 @@ html, body {
   transform: translateY(-8px);
 }
 
+.tooltip {
+  position: relative;
+  display: inline-block;
+  opacity: 1;
+  z-index: 1;
+  font-size: inherit;
+  float: right;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 140px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  font-size: 0.85rem;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  bottom: 150%;
+  left: 50%;
+  margin-left: -75px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
 .page-wrapper:after {
   display: block;
   height: 50px;
@@ -937,57 +979,6 @@ select {
 
 /* Sidebar */
 
-#sidebar {
-  position: relative;
-  padding: 10px 20px;
-  min-width: 250px;
-}
-
-#sidebar.active {
-  margin-left: -250px;
-}
-
-#sidebar ul li a {
-  padding: 10px;
-  display: block;
-}
-
-#sidebar ul li .collapse {
-  padding-left: 20px;
-}
-
-#sidebar ul li.active>a,
-a[area-expanded="true"] {
-  color: #1b6ca8;
-}
-
-a[data-toggle="collapse"] {
-  position: relative;
-}
-
-.dropdown-toggle::after {
-  display: block;
-  position: absolute;
-  top: 50%;
-  right: 20%;
-  transform: translateY(-50%);
-}
-
-@media (min-width: 769px) {
-  #sidebarCollapse {
-    display: none;
-  }
-}
-
-@media (max-width: 768px) {
-  #sidebar {
-      margin-left: -250px;
-  }
-  #sidebar.active {
-      margin-left: 0;
-  }
-}
-
 .doc-nav {
   position: absolute;
   top: 0;
@@ -1002,7 +993,7 @@ a[data-toggle="collapse"] {
   position: -ms-sticky;
   position: -o-sticky;
   position: sticky;
-  top: 0;
+  top: 10rem;
 }
 
 .doc-menu {
@@ -1066,7 +1057,7 @@ a[data-toggle="collapse"] {
 
 .doc-sub-menu .nav-link {
   margin-bottom: 10px;
-  font-size: 1rem;
+  font-size: 0.8rem;
   display: block;
   color: black;
   padding: 0;
@@ -1299,7 +1290,7 @@ a[data-toggle="collapse"] {
 .sticky {
   position: -webkit-sticky;
   position: sticky;
-  top: 0;
+  top: 10rem;
 }
 
 .sticky:before,

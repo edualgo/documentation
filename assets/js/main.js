@@ -1,69 +1,71 @@
-$(document).ready(function() {
-	
-    /* ===== Stickyfill ===== */
-    /* Ref: https://github.com/wilddeer/stickyfill */
-    // Add browser support to position: sticky
-    var elements = $('.sticky');
-    Stickyfill.add(elements);
+$(document).ready(function () {
+
+  /* ===== Stickyfill ===== */
+  /* Ref: https://github.com/wilddeer/stickyfill */
+  // Add browser support to position: sticky
+  var elements = $('.sticky');
+  Stickyfill.add(elements);
 
 
-    /* Activate scrollspy menu */
-    $('body').scrollspy({target: '#doc-menu', offset: 100});
-    
-    /* Smooth scrolling */
-	$('a.scrollto').on('click', function(e){
-        //store hash
-        var target = this.hash;    
-        e.preventDefault();
-		$('body').scrollTo(target, 800, {offset: 0, 'axis':'y'});
-		
-    });
-    
-    $('#sidebarCollapse').on('click', function () {
-        $('#sidebar').toggleClass('active');
-    });
+  /* Activate scrollspy menu */
+  $('body').scrollspy({ target: '#doc-menu', offset: 100 });
 
-     
-    /* Bootstrap lightbox */
-    /* Ref: http://ashleydw.github.io/lightbox/ */
+  /* Smooth scrolling */
+  $('a.scrollto').on('click', function (e) {
+    //store hash
+    var target = this.hash;
+    e.preventDefault();
+    $('body').scrollTo(target, 800, { offset: 0, 'axis': 'y' });
 
-    $(document).delegate('*[data-toggle="lightbox"]', 'click', function(e) {
-        e.preventDefault();
-        $(this).ekkoLightbox();
-    });
-
-    /*var dropdown = document.getElementsByClassName("dropdown-btn");
-var i;
-
-for (i = 0; i < dropdown.length; i++) {
-  dropdown[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var dropdownContent = this.nextElementSibling;
-    if (dropdownContent.style.display === "block") {
-      dropdownContent.style.display = "none";
-    } else {
-      dropdownContent.style.display = "block";
-    }
   });
-}*/
 
-    $('pre a.copy-btn').click(function(e) {
+  $('#navbarCollapse').on('click', function () {
+    $('#navbar').toggleClass('active');
+  });
 
-        var text = $(this).parent().text().trim();
-        var copyVal = document.createElement('input');
-        copyVal.value = text
-        document.body.appendChild(copyVal);
-        copyVal.select();
-        document.execCommand('copy');
-        console.log(copyVal.value)
-        document.body.removeChild(copyVal);
-      });
+
+  /* Bootstrap lightbox */
+  /* Ref: http://ashleydw.github.io/lightbox/ */
+
+  $(document).delegate('*[data-toggle="lightbox"]', 'click', function (e) {
+    e.preventDefault();
+    $(this).ekkoLightbox();
+  });
+
+  /*$.getJSON('../../navbar.html', function (data) {
+
+    console.log(data);
+    document.getElementById('navbar').innerHTML(data);
+      
+  });*/
+
+
+  // ==== Adding Copy Button
+  $('#copy-btn').click(function (e) {
+
+    var text = $(this).parent().text().trim();
+    var copyVal = document.createElement('input');
+    copyVal.value = text
+    document.body.appendChild(copyVal);
+    copyVal.select();
+    document.execCommand('copy');
+    document.body.removeChild(copyVal);
+
+    var tooltip = document.getElementById("tooltip");
+    tooltip.innerHTML = "Copied Text";
+  });
+
+  $('#copy-btn').mouseout(function (e) {
+    var tooltip = document.getElementById("tooltip");
+    tooltip.innerHTML = "Copy to clipboard";
+  });
 
 });
 
-/*
-<div class="doc-body row">
-          <div class="doc-content col-md-9 col-12 order-1">
+fetch('../../navbar.html')
+  .then(response => response.text())
+  .then(text => {
+    let nabvar = document.getElementById('navbar');
 
-
-*/ 
+    nabvar.innerHTML = text;
+  })

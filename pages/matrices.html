@@ -21,6 +21,7 @@
   <link rel="stylesheet" href="../assets/plugins/prism/prism.css">
   <link rel="stylesheet" href="../assets/plugins/elegant_font/css/style.css">
   <link id="theme-style" rel="stylesheet" href="../assets/css/styles.css">
+  <link id="theme-style" rel="stylesheet" href="../assets/css/sidenav.css">
 </head>
 
 <body class="body-green">
@@ -33,7 +34,7 @@
               <span class="text-highlight">edu </span><span class="text-bold">Algo</span>
             </a>
           </h1>
-          <a id="sidebarCollapse" class="menu-btn">
+          <a id="navbarCollapse" class="menu-btn">
             <i class="fas fa-bars"></i>
           </a>
         </div>
@@ -57,56 +58,21 @@
         </div>
       </div>
     </header>
-    <div class="doc-wrapper" style="display: flex;">
-      <nav id="sidebar">
-        <ul class="list-unstyled components">
-          <li class="active">
-            <a class="nav-link dropdown-toggle" data-toggle="collapse" aria-expanded="false"
-              href="#installation-menu">Installation</a>
-            <ul class="collapse list-unstyled" id="installation-menu">
-              <li><a class="nav-link scrollto" href="../start.html#step1">Option - 1</a></li>
-              <li><a class="nav-link scrollto" href="../start.html#step2">Option - 2</a></li>
-            </ul>
-          </li>
-          <li>
-            <a class="nav-link scrollto" href="../start.html#download-section">Download</a>
-          </li>
-          <li>
-            <a class="nav-link dropdown-toggle" data-toggle="collapse" aria-expanded="false"
-              href="#algorithm-menu">Algorithms</a>
-            <ul class="collapse list-unstyled" id="algorithm-menu">
-              <li><a class="nav-link" href="./matrices.html">Matrices</a></li>
-              <li><a class="nav-link" href="./sorting.html">Sorting</a></li>
-              <li><a class="nav-link" href="./search.html">Searching</a></li>
-              <li><a class="nav-link" href="./string.html">String</a></li>
-              <li><a class="nav-link" href="./greedy.html">Greedy Methods</a></li>
-            </ul>
-          </li>
-          <li>
-            <a class="nav-link" href="../linkedlist.html">Linked List</a>
-          </li>
-          <li>
-            <a class="nav-link" href="../binarytree">Binary Tree</a>
-          </li>
-          <li>
-            <a class="nav-link" href="../notworking.html">Stack</a>
-          </li>
-          <li>
-            <a class="nav-link" href="../notworking.html">Queue</a>
-          </li>
-        </ul>
+    <div class="doc-wrapper">
+      <nav id="navbar">
+
       </nav>
 
-      <div class="container">
+      <div class="container" id="mainContent">
         <div id="doc-header" class="doc-header text-center">
           <h1 class="doc-title"><i class="icon fas fa-file-contract"></i> Matrices Implementations</h1>
           <div class="meta"><i class="far fa-clock"></i> Last updated: 2nd Dec, 2020</div>
         </div>
         <div class="doc-body row">
-          <div class="doc-content col-md-9 col-12 order-1">
+          <div class="doc-content col-md-9 col-12 order-0">
             <div class="content-inner">
               <section id="code-section" class="doc-section">
-                <div class="section-block">
+                <div class="section-block" id="rotate-matrix">
                   <h5><u>Rotating a matrix</u></h5>
                   <p>
                     <b>Module:</b> matrices()<br />
@@ -124,7 +90,7 @@
                         <pre><code class="language-python">from edualgo import algorithms as al
 img_arr = [[1,2,3],[4,5,6],[7,8,9]]
 ping2 = al.matrices()
-ping2.rotateImage(img_arr,3)</code></pre>
+ping2.rotateImage(img_arr,3)</code> <div class="tooltip" id="copy-btn"><a class="copy-btn"><span class="tooltiptext" id="tooltip">Copy to clipboard</span><i class="icon far fa-copy"></i></a></div></pre>
                         <pre><code class="language-python">Output:
 img_arr = [[7, 4, 1], [8, 5, 2], [9, 6, 3]]
 </code>
@@ -135,7 +101,7 @@ img_arr = [[7, 4, 1], [8, 5, 2], [9, 6, 3]]
                     </div>
                   </div>
                 </div>
-                <div class="section-block">
+                <div class="section-block" id="set-zeros">
                   <h5><u>Set Zeros</u></h5>
                   <p>
                     <b>Module:</b> matrices()<br />
@@ -153,7 +119,7 @@ img_arr = [[7, 4, 1], [8, 5, 2], [9, 6, 3]]
                         <pre><code class="language-python">from edualgo import algorithms as al
 img_arr = [[1,0,3],[4,5,6],[7,8,9]]
 ping2 = al.matrices()
-ping2.setZeros(img_arr,3,3)</code></pre>
+ping2.setZeros(img_arr,3,3)</code> <div class="tooltip" id="copy-btn"><a class="copy-btn"><span class="tooltiptext" id="tooltip">Copy to clipboard</span><i class="icon far fa-copy"></i></a></div></pre>
                         <pre><code class="language-python">Output:
 img_arr = [[0, 0, 0], [4, 0, 6], [7, 0, 9]]
 
@@ -164,6 +130,19 @@ img_arr = [[0, 0, 0], [4, 0, 6], [7, 0, 9]]
                   </div>
                 </div>
               </section>
+            </div>
+          </div>
+
+          <div class="doc-sidebar col-md-3 col-12 order-1 d-none d-md-flex">
+            <div id="doc-nav" class="doc-nav">
+              <nav id="doc-menu" class="nav doc-menu flex-column sticky">
+                <a class="nav-link scrollto" href="#code-section">Matrices Implementations</a>
+                <nav class="doc-sub-menu nav flex-column">
+                  <a class="nav-link scrollto" href="#rotate-matrix">Rotating a matrix</a>
+                  <a class="nav-link scrollto" href="#set-zeros">Set Zeros</a>
+                </nav>
+              </nav>
+
             </div>
           </div>
         </div>

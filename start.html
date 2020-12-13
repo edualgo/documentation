@@ -21,81 +21,49 @@
   <link rel="stylesheet" href="assets/plugins/prism/prism.css">
   <link rel="stylesheet" href="assets/plugins/elegant_font/css/style.css">
   <link id="theme-style" rel="stylesheet" href="assets/css/styles.css">
+  <link id="theme-style" rel="stylesheet" href="assets/css/sidenav.css">
 </head>
 
 <body class="body-green">
 
-  <header id="header" class="header">
-    <div class="container">
-      <div class="branding">
-        <h1 class="logo">
-          <a href="index.html">
-            <span class="text-highlight">edu </span><span class="text-bold">Algo</span>
+
+
+  <div class="page-wrapper">
+    <header id="header" class="header">
+      <div class="container">
+        <div class="branding">
+          <h1 class="logo">
+            <a href="index.html">
+              <span class="text-highlight">edu </span><span class="text-bold">Algo</span>
+            </a>
+          </h1>
+          <a id="navbarCollapse" class="menu-btn">
+            <i class="fas fa-bars"></i>
           </a>
-        </h1>
-        <a id="sidebarCollapse" class="menu-btn">
-          <i class="fas fa-bars"></i>
-        </a>
+        </div>
+
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+          <li class="breadcrumb-item active">Documentation</li>
+        </ol>
+
+        <div class="top-search-box">
+          <form class="form-inline search-form justify-content-center" action="" method="get">
+
+            <input type="text" placeholder="Search..." name="search" class="form-control search-input">
+
+            <button type="submit" class="btn search-btn" value="Search"><i class="fas fa-search"></i></button>
+          </form>
+        </div>
       </div>
+    </header>
 
-      <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-        <li class="breadcrumb-item active">Documentation</li>
-      </ol>
-
-      <div class="top-search-box">
-        <form class="form-inline search-form justify-content-center" action="" method="get">
-
-          <input type="text" placeholder="Search..." name="search" class="form-control search-input">
-
-          <button type="submit" class="btn search-btn" value="Search"><i class="fas fa-search"></i></button>
-        </form>
-      </div>
-    </div>
-  </header>
-
-  <div class="page-wrapper" style="display: flex;">
-    <nav id="sidebar">
-      <ul class="list-unstyled components">
-        <li class="active">
-          <a class="nav-link dropdown-toggle" data-toggle="collapse" aria-expanded="false"
-            href="#installation-menu">Installation</a>
-          <ul class="collapse list-unstyled" id="installation-menu">
-            <li><a class="nav-link scrollto" href="#step1">Option - 1</a></li>
-            <li><a class="nav-link scrollto" href="#step2">Option - 2</a></li>
-          </ul>
-        </li>
-        <li>
-          <a class="nav-link scrollto" href="#download-section">Download</a>
-        </li>
-        <li>
-          <a class="nav-link dropdown-toggle" data-toggle="collapse" aria-expanded="false"
-            href="#algorithm-menu">Algorithms</a>
-          <ul class="collapse list-unstyled" id="algorithm-menu">
-            <li><a class="nav-link" href="./pages/matrices.html">Matrices</a></li>
-            <li><a class="nav-link" href="./pages/sorting.html">Sorting</a></li>
-            <li><a class="nav-link" href="./pages/search.html">Searching</a></li>
-            <li><a class="nav-link" href="./pages/string.html">String</a></li>
-            <li><a class="nav-link" href="./pages/greedy.html">Greedy Methods</a></li>
-          </ul>
-        </li>
-        <li>
-          <a class="nav-link" href="./linkedlist.html">Linked List</a>
-        </li>
-        <li>
-          <a class="nav-link" href="./binarytree.html">Binary Tree</a>
-        </li>
-        <li>
-          <a class="nav-link" href="./notworking.html">Stack</a>
-        </li>
-        <li>
-          <a class="nav-link" href="./notworking.html">Queue</a>
-        </li>
-      </ul>
-    </nav>
 
     <div class="doc-wrapper" id="content">
-      <div class="container">
+      <nav id="navbar">
+        <!-- Navbar through JS -->
+      </nav>
+      <div class="container" id="mainContent">
         <div id="doc-header" class="doc-header text-center">
           <h1 class="doc-title"><i class="icon fas fa-file-contract"></i> Documentation</h1>
           <div class="meta"><i class="far fa-clock"></i> Last updated: 19th Aug, 2020</div>
@@ -108,7 +76,7 @@
               <h3 class="block-title">Option - 1</h3>
               <p>By using command prompt/python prompt, one can easily install it using pip.</p>
               <div class="code-block">
-                <pre><code class="language-python">pip install eduAlgo</code> <a class="copy-btn"><i class="icon far fa-copy"></i></a></pre>
+                <pre><code class="language-python">pip install eduAlgo</code> <div class="tooltip" id="copy-btn"><a class="copy-btn"><span class="tooltiptext" id="tooltip">Copy to clipboard</span><i class="icon far fa-copy"></i></a></div></pre>
               </div>
             </div>
             <div id="step2" class="section-block">
@@ -118,7 +86,7 @@
                 by running the following piece of code in your anaconda powershell prompt.
               </p>
               <div class="code-block">
-                <pre><code class="language-python">conda install eduAlgo</code> <a class="copy-btn"><i class="icon far fa-copy"></i></a></pre>
+                <pre><code class="language-python">conda install eduAlgo</code> <div class="tooltip" id="copy-btn"><a class="copy-btn"><span class="tooltiptext" id="tooltip">Copy to clipboard</span><i class="icon far fa-copy"></i></a></div></pre>
               </div>
             </div>
           </section>
@@ -171,12 +139,7 @@
         </div>
       </div>
     </div>
-  </div>
 
-
-
-
-  <footer class="footer text-center">
     <div id="promo-block" class="promo-block">
       <div class="container">
         <div class="promo-block-inner">
@@ -219,10 +182,17 @@
           </div>
         </div>
       </div>
-      Copyright 2020 @<a href="https://github.com/Abhijit2505" target="_blank">Abhijit Tripathy</a>. Package Designed
-      by
-      <a href="https://github.com/Abhijit2505" target="_blank">Abhijit Tripathy</a> for python enthusiasts
-      [Theme Designed by <a href="https://themes.3rdwavemedia.com/" target="_blank">Xiaoying Riley</a>]
+    </div>
+  </div>
+
+
+
+
+  <footer class="footer text-center">
+    Copyright 2020 @<a href="https://github.com/Abhijit2505" target="_blank">Abhijit Tripathy</a>. Package Designed
+    by
+    <a href="https://github.com/Abhijit2505" target="_blank">Abhijit Tripathy</a> for python enthusiasts
+    [Theme Designed by <a href="https://themes.3rdwavemedia.com/" target="_blank">Xiaoying Riley</a>]
   </footer>
 
   <script type="text/javascript" src="assets/plugins/jquery-3.4.1.min.js"></script>

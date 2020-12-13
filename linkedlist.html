@@ -21,6 +21,7 @@
   <link rel="stylesheet" href="assets/plugins/prism/prism.css">
   <link rel="stylesheet" href="assets/plugins/elegant_font/css/style.css">
   <link id="theme-style" rel="stylesheet" href="assets/css/styles.css">
+  <link id="theme-style" rel="stylesheet" href="assets/css/sidenav.css">
 </head>
 
 <body class="body-green">
@@ -33,7 +34,7 @@
               <span class="text-highlight">edu </span><span class="text-bold">Algo</span>
             </a>
           </h1>
-          <a id="sidebarCollapse" class="menu-btn">
+          <a id="navbarCollapse" class="menu-btn">
             <i class="fas fa-bars"></i>
           </a>
         </div>
@@ -56,52 +57,17 @@
         </div>
       </div>
     </header>
-    <div class="doc-wrapper" style="display: flex;">
-      <nav id="sidebar">
-        <ul class="list-unstyled components">
-          <li class="active">
-            <a class="nav-link dropdown-toggle" data-toggle="collapse" aria-expanded="false"
-              href="#installation-menu">Installation</a>
-            <ul class="collapse list-unstyled" id="installation-menu">
-              <li><a class="nav-link scrollto" href="../start.html#step1">Option - 1</a></li>
-              <li><a class="nav-link scrollto" href="../start.html#step2">Option - 2</a></li>
-            </ul>
-          </li>
-          <li>
-            <a class="nav-link scrollto" href="../start.html#download-section">Download</a>
-          </li>
-          <li>
-            <a class="nav-link dropdown-toggle" data-toggle="collapse" aria-expanded="false"
-              href="#algorithm-menu">Algorithms</a>
-            <ul class="collapse list-unstyled" id="algorithm-menu">
-              <li><a class="nav-link" href="./pages/matrices.html">Matrices</a></li>
-              <li><a class="nav-link" href="./pages/sorting.html">Sorting</a></li>
-              <li><a class="nav-link" href="./pages/search.html">Searching</a></li>
-              <li><a class="nav-link" href="./pages/string.html">String</a></li>
-              <li><a class="nav-link" href="./pages/greedy.html">Greedy Methods</a></li>
-            </ul>
-          </li>
-          <li>
-            <a class="nav-link" href="./linkedlist.html">Linked List</a>
-          </li>
-          <li>
-            <a class="nav-link" href="./binarytree.html">Binary Tree</a>
-          </li>
-          <li>
-            <a class="nav-link" href="./notworking.html">Stack</a>
-          </li>
-          <li>
-            <a class="nav-link" href="./notworking.html">Queue</a>
-          </li>
-        </ul>
+    <div class="doc-wrapper">
+      <nav id="navbar">
+        
       </nav>
-      <div class="container">
+      <div class="container" id="mainContent">
         <div id="doc-header" class="doc-header text-center">
           <h1 class="doc-title"><i class="icon fas fa-file-contract"></i> Linked List Implementations</h1>
           <div class="meta"><i class="far fa-clock"></i> Last updated: 19th Aug, 2020</div>
         </div>
         <div class="doc-body row">
-          <div class="doc-content col-md-9 col-12 order-1">
+          <div class="doc-content col-md-9 col-12 order-0">
             <div class="content-inner">
 
 
@@ -148,7 +114,7 @@ arr1 = list(map(int,input().split()))
 for i in arr1:
     llist1.append(i)
 sol = ll.list_algorithms()
-print(sol.is_palindrome(llist1.head))</code></pre>
+print(sol.is_palindrome(llist1.head))</code> <div class="tooltip" id="copy-btn"><a class="copy-btn"><span class="tooltiptext" id="tooltip">Copy to clipboard</span><i class="icon far fa-copy"></i></a></div></pre>
                         <pre><code class="language-python">Input:
 1 2 2 2 1
 Output:
@@ -182,7 +148,7 @@ sol = ll.list_algorithms()
 
 llist3 = ll.linkedlist()
 llist3.head = sol.removeElements(llist1.head,num)
-llist3.printLL()</code></pre>
+llist3.printLL()</code> <div class="tooltip" id="copy-btn"><a class="copy-btn"><span class="tooltiptext" id="tooltip">Copy to clipboard</span><i class="icon far fa-copy"></i></a></div></pre>
                         <pre><code class="language-python">Input:
 1 2 3 4 5 6 6 2 2 4 9
 6
@@ -216,7 +182,7 @@ sol = ll.list_algorithms()
 
 llist3 = ll.linkedlist()
 llist3.head = sol.delete_sorted_duplicate(llist1.head)
-llist3.printLL()</code></pre>
+llist3.printLL()</code> <div class="tooltip" id="copy-btn"><a class="copy-btn"><span class="tooltiptext" id="tooltip">Copy to clipboard</span><i class="icon far fa-copy"></i></a></div></pre>
                         <pre><code class="language-python">Input:
 1 2 2 3 3 5 5 9 9
 Output:
@@ -258,7 +224,7 @@ sol = ll.list_algorithms()
 
 llist3 = ll.linkedlist()
 llist3.head = sol.mergeTwoLists(llist1.head,llist2.head)
-llist3.printLL()</code></pre>
+llist3.printLL()</code> <div class="tooltip" id="copy-btn"><a class="copy-btn"><span class="tooltiptext" id="tooltip">Copy to clipboard</span><i class="icon far fa-copy"></i></a></div></pre>
                         <pre><code class="language-python">Input:
 1 2 3 2 1
 4 5 6 8 9
@@ -297,7 +263,7 @@ sol = ll.list_algorithms()
 
 llist3 = ll.linkedlist()
 llist3.head = sol.reverse_linked_iterative(llist1.head)
-llist3.printLL()</code></pre>
+llist3.printLL()</code> <div class="tooltip" id="copy-btn"><a class="copy-btn"><span class="tooltiptext" id="tooltip">Copy to clipboard</span><i class="icon far fa-copy"></i></a></div></pre>
                         <pre><code class="language-python">Input:
 1 2 3 4 5
 Output:
@@ -332,7 +298,7 @@ for i in arr1:
 sol = ll.list_algorithms()
 
 sol.delete_node(llist1.head)
-llist1.printLL()</code></pre>
+llist1.printLL()</code> <div class="tooltip" id="copy-btn"><a class="copy-btn"><span class="tooltiptext" id="tooltip">Copy to clipboard</span><i class="icon far fa-copy"></i></a></div></pre>
                         <pre><code class="language-python">Input:
 1 2 3 4 5 6
 Output:
@@ -366,7 +332,7 @@ for i in arr1:
 
 sol = ll.list_algorithms()
 
-print(sol.middleNode(llist1.head).data)</code></pre>
+print(sol.middleNode(llist1.head).data)</code> <div class="tooltip" id="copy-btn"><a class="copy-btn"><span class="tooltiptext" id="tooltip">Copy to clipboard</span><i class="icon far fa-copy"></i></a></div></pre>
                         <pre><code class="language-python">Input:
 1 2 3 4 5 6
 Output:
@@ -400,7 +366,7 @@ for i in arr1:
 
 sol = ll.list_algorithms()
 
-print(sol.length(llist1.head))</code></pre>
+print(sol.length(llist1.head))</code> <div class="tooltip" id="copy-btn"><a class="copy-btn"><span class="tooltiptext" id="tooltip">Copy to clipboard</span><i class="icon far fa-copy"></i></a></div></pre>
                         <pre><code class="language-python">Input:
 1 2 3 4 5 6
 Output:
@@ -434,7 +400,7 @@ for i in arr1:
 
 sol = ll.list_algorithms()
 
-print(sol.getDecimalValue(llist1.head))</code></pre>
+print(sol.getDecimalValue(llist1.head))</code> <div class="tooltip" id="copy-btn"><a class="copy-btn"><span class="tooltiptext" id="tooltip">Copy to clipboard</span><i class="icon far fa-copy"></i></a></div></pre>
                         <pre><code class="language-python">Input:
 1 0 0 1 0 1
 Output:
@@ -470,7 +436,7 @@ for i in arr1:
 
 sol = ll.list_algorithms()
 
-print(sol.nextLargerNodes(llist1.head))</code></pre>
+print(sol.nextLargerNodes(llist1.head))</code> <div class="tooltip" id="copy-btn"><a class="copy-btn"><span class="tooltiptext" id="tooltip">Copy to clipboard</span><i class="icon far fa-copy"></i></a></div></pre>
                         <pre><code class="language-python">Input:
 2 1 5
 Output:
@@ -489,7 +455,7 @@ Output:
             </div>
           </div>
 
-          <div class="doc-sidebar col-md-3 col-12 order-0 d-none d-md-flex">
+          <div class="doc-sidebar col-md-3 col-12 order-1 d-none d-md-flex">
             <div id="doc-nav" class="doc-nav">
               <nav id="doc-menu" class="nav doc-menu flex-column sticky">
                 <a class="nav-link scrollto" href="#code-section">Linked List Implementations</a>

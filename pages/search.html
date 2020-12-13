@@ -21,6 +21,7 @@
   <link rel="stylesheet" href="../assets/plugins/prism/prism.css">
   <link rel="stylesheet" href="../assets/plugins/elegant_font/css/style.css">
   <link id="theme-style" rel="stylesheet" href="../assets/css/styles.css">
+  <link id="theme-style" rel="stylesheet" href="../assets/css/sidenav.css">
 </head>
 
 <body class="body-green">
@@ -33,7 +34,7 @@
               <span class="text-highlight">edu </span><span class="text-bold">Algo</span>
             </a>
           </h1>
-          <a id="sidebarCollapse" class="menu-btn">
+          <a id="navbarCollapse" class="menu-btn">
             <i class="fas fa-bars"></i>
           </a>
         </div>
@@ -57,56 +58,21 @@
         </div>
       </div>
     </header>
-    <div class="doc-wrapper" style="display: flex;">
-      <nav id="sidebar">
-        <ul class="list-unstyled components">
-          <li class="active">
-            <a class="nav-link dropdown-toggle" data-toggle="collapse" aria-expanded="false"
-              href="#installation-menu">Installation</a>
-            <ul class="collapse list-unstyled" id="installation-menu">
-              <li><a class="nav-link scrollto" href="../start.html#step1">Option - 1</a></li>
-              <li><a class="nav-link scrollto" href="../start.html#step2">Option - 2</a></li>
-            </ul>
-          </li>
-          <li>
-            <a class="nav-link scrollto" href="../start.html#download-section">Download</a>
-          </li>
-          <li>
-            <a class="nav-link dropdown-toggle" data-toggle="collapse" aria-expanded="false"
-              href="#algorithm-menu">Algorithms</a>
-            <ul class="collapse list-unstyled" id="algorithm-menu">
-              <li><a class="nav-link" href="./matrices.html">Matrices</a></li>
-              <li><a class="nav-link" href="./sorting.html">Sorting</a></li>
-              <li><a class="nav-link" href="./search.html">Searching</a></li>
-              <li><a class="nav-link" href="./string.html">String</a></li>
-              <li><a class="nav-link" href="./greedy.html">Greedy Methods</a></li>
-            </ul>
-          </li>
-          <li>
-            <a class="nav-link" href="../linkedlist.html">Linked List</a>
-          </li>
-          <li>
-            <a class="nav-link" href="../binarytree.html">Binary Tree</a>
-          </li>
-          <li>
-            <a class="nav-link" href="../notworking.html">Stack</a>
-          </li>
-          <li>
-            <a class="nav-link" href="../notworking.html">Queue</a>
-          </li>
-        </ul>
+    <div class="doc-wrapper">
+      <nav id="navbar">
+        
       </nav>
-      <div class="container">
+      <div class="container" id="mainContent">
         <div id="doc-header" class="doc-header text-center">
           <h1 class="doc-title"><i class="icon fas fa-file-contract"></i> Searching Implementations</h1>
           <div class="meta"><i class="far fa-clock"></i> Last updated: 2nd Dec, 2020</div>
         </div>
         <div class="doc-body row">
-          <div class="doc-content col-md-9 col-12 order-1">
+          <div class="doc-content col-md-9 col-12 order-0">
             <div class="content-inner">
               <section id="code-section" class="doc-section">
                 <h2 style="color: brown" class="section-title">Linear Search</h2>
-                <div class="section-block">
+                <div class="section-block" id="linear-search">
                   <p>
                     <b>Module:</b>search_algorithms()<br />
                     <b>Method :</b> <i>linear_search(arr,key,hint=False)</i><br />
@@ -124,7 +90,7 @@
                         <pre><code class="language-python">from edualgo import algorithms as al
 ping = al.search_algorithms()
 arr = [10,9,4,5,7,8]
-ping.linear_search(arr,5)</code></pre>
+ping.linear_search(arr,5)</code> <div class="tooltip" id="copy-btn"><a class="copy-btn"><span class="tooltiptext" id="tooltip">Copy to clipboard</span><i class="icon far fa-copy"></i></a></div></pre>
                         <pre><code class="language-python">Output:
 Linear Search Runtime = 0.0
 
@@ -138,7 +104,7 @@ Linear Search Runtime = 0.0
                   </div>
                 </div>
                 <h2 style="color: brown" class="section-title">Binary Search</h2>
-                <div class="section-block">
+                <div class="section-block" id="binary-search">
                   <p>
                     <b>Module:</b>search_algorithms()<br />
                     <b>Method :</b> <i>binary_search(arr,key)</i><br />
@@ -153,7 +119,7 @@ Linear Search Runtime = 0.0
                         <pre><code class="language-python">from edualgo import algorithms as al
 ping = al.search_algorithms()
 arr = [10,9,4,5,7,8]
-ping.binary_search(arr,5)</code></pre>
+ping.binary_search(arr,5)</code> <div class="tooltip" id="copy-btn"><a class="copy-btn"><span class="tooltiptext" id="tooltip">Copy to clipboard</span><i class="icon far fa-copy"></i></a></div></pre>
                         <pre><code class="language-python">Output:
 3
 </code>
@@ -163,6 +129,19 @@ ping.binary_search(arr,5)</code></pre>
                   </div>
                 </div>
               </section>
+            </div>
+          </div>
+
+          <div class="doc-sidebar col-md-3 col-12 order-1 d-none d-md-flex">
+            <div id="doc-nav" class="doc-nav">
+              <nav id="doc-menu" class="nav doc-menu flex-column sticky">
+                <a class="nav-link scrollto" href="#code-section">Searching Implementations</a>
+                <nav class="doc-sub-menu nav flex-column">
+                  <a class="nav-link scrollto" href="#linear-search">Linear Search</a>
+                  <a class="nav-link scrollto" href="#binary-search">Binary Search</a>
+                </nav>
+              </nav>
+
             </div>
           </div>
         </div>
