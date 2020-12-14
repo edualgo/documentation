@@ -10,9 +10,10 @@
     position: sticky;
     top: 10rem;
     background-color: #F9F9FB;
-    height: 90vh;
+    height: 75vh;
     padding: 10px 40px;
     z-index: 100;
+    overflow: auto;
   }
   
   nav ul li a {
@@ -67,11 +68,11 @@
   
   @media (max-width: 768px) {
     #navbar {
-        margin-left: -250px;
+        margin-left: -500px;
         top: 0;
         position: fixed;
         z-index: 102;
-        height: 100vh !important;
+        height: 110vh !important;
         
     }
     #navbar.active {
