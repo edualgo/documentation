@@ -33,7 +33,7 @@ pre[class*="language-"] {
 pre[class*="language-"] {
 	padding: 1em;
 	margin: .5em 0;
-	overflow: overlay;
+	overflow: auto;
 	border-radius: 0.3em;
 }
 
@@ -162,12 +162,3 @@ pre.line-numbers > code {
 			padding-right: 0.8em;
 			text-align: right;
 		}
-
-		@media (min-width: 769px) {
-			pre[class*="language-"] {
-				padding: 1em;
-				margin: .5em 0;
-				overflow: inherit !important;
-				border-radius: 0.3em;
-			}
-		  }
