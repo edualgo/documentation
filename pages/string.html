@@ -6,17 +6,22 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="A very simple python package made with python scripts to study different algorithms for educational purposes.">
+  <meta name="description"
+    content="A very simple python package made with python scripts to study different algorithms for educational purposes.">
   <meta name="author" content="Abhijit2505">
   <meta property="og:image" content="../assets/images/eduAlgo-doc.png" />
-  <link rel="shortcut icon" href="favicon.ico">
-  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
-  <link href="https://fonts.googleapis.com/css2?family=Recursive&family=Zilla+Slab:wght@300&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="../favicon.ico">
+  <link
+    href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800'
+    rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/css2?family=Recursive&family=Zilla+Slab:wght@300&display=swap"
+    rel="stylesheet">
   <script defer src="../assets/fontawesome/js/all.js"></script>
   <link rel="stylesheet" href="../assets/plugins/bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="../assets/plugins/prism/prism.css">
   <link rel="stylesheet" href="../assets/plugins/elegant_font/css/style.css">
   <link id="theme-style" rel="stylesheet" href="../assets/css/styles.css">
+  <link id="theme-style" rel="stylesheet" href="../assets/css/sidenav.css">
 </head>
 
 <body class="body-green">
@@ -25,17 +30,19 @@
       <div class="container">
         <div class="branding">
           <h1 class="logo">
-            <a href="index.html">
+            <a href="/">
               <span class="text-highlight">edu </span><span class="text-bold">Algo</span>
             </a>
           </h1>
-
+          <a id="navbarCollapse" class="menu-btn">
+            <i class="fas fa-bars"></i>
+          </a>
         </div>
 
         <ol class="breadcrumb">
           <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
           <li class="breadcrumb-item"><a href="../start.html">Documentation</a></li>
-          <li class="breadcrumb-item"><a href="../algo.html">Algorithms</a></li>
+          <li class="breadcrumb-item"><a href="../start.html">Algorithms</a></li>
           <li class="breadcrumb-item active">
             String Algorithms
           </li>
@@ -52,203 +59,230 @@
       </div>
     </header>
     <div class="doc-wrapper">
-      <div class="container">
+      <nav id="navbar">
+        
+      </nav>
+      <div class="container" id="mainContent">
         <div id="doc-header" class="doc-header text-center">
           <h1 class="doc-title"><i class="icon fas fa-file-contract"></i> String Implementations</h1>
           <div class="meta"><i class="far fa-clock"></i> Last updated: 2nd Dec, 2020</div>
         </div>
         <div class="doc-body row">
-          <div class="doc-content col-md-9 col-12 order-1">
+          <div class="doc-content col-md-9 col-12 order-0">
             <div class="content-inner">
-                <section id="code-section" class="doc-section">
-                    <h2 style="color: brown"class="section-title">Unique String</h2>
-                    <div class="section-block">
-                          <p>
-                            <b>Module:</b>string_algorithms()<br />
-                            <b>Method :</b> <i>isUnique(str1,hint=False)</i><br />
-                            <b>Uses :</b> This method is used in checking if all the characters in a given string are unique & returns boolean<br />
-                            <b>Parameters :</b> <b>str1</b> - a string,
-                            <b>hint</b> is passed False by default, by declaring hint=True
-                            a detailed description of the string algorithm can be found.
-                          </p>
-                        <div class="code-block">
-                          <div id="python" class="section-block">
-                            <div class="code-block">
-                              <h6>Python Code Example</h6>
-                              <pre><code class="language-python">from edualgo import algorithms as al
+              <section id="code-section" class="doc-section">
+                <h2 style="color: brown" class="section-title">Unique String</h2>
+                <div class="section-block" id="unique-str">
+                  <p>
+                    <b>Module:</b>string_algorithms()<br />
+                    <b>Method :</b> <i>isUnique(str1,hint=False)</i><br />
+                    <b>Uses :</b> This method is used in checking if all the characters in a given string are unique &
+                    returns boolean<br />
+                    <b>Parameters :</b> <b>str1</b> - a string,
+                    <b>hint</b> is passed False by default, by declaring hint=True
+                    a detailed description of the string algorithm can be found.
+                  </p>
+                  <div class="code-block">
+                    <div id="python" class="section-block">
+                      <div class="code-block">
+                        <h6>Python Code Example</h6>
+                        <pre><code class="language-python">from edualgo import algorithms as al
 ping = al.string_algorithms()
 
 str1 = "abcde"
-ping.isUnique(str1)</code></pre>
-                              <pre><code class="language-python">Output:
+ping.isUnique(str1)</code> <div class="tooltip" id="copy-btn"><a class="copy-btn"><span class="tooltiptext" id="tooltip">Copy to clipboard</span><i class="icon far fa-copy"></i></a></div></pre>
+                        <pre><code class="language-python">Output:
 True
 
 </code>
     </pre>
-    <i>For getting the hint just pass hint=True in the function like - isUnique(str1,True).</i>
-                            </div>
-                          </div>
-                        </div>
+                        <i>For getting the hint just pass hint=True in the function like - isUnique(str1,True).</i>
                       </div>
-                      <h2 style="color: brown"class="section-title">Permutation Checking</h2>
-                    <div class="section-block">
-                          <p>
-                            <b>Module:</b>string_algorithms()<br />
-                            <b>Method :</b> <i>isPermutation(str1,str2,hint=False)</i><br />
-                            <b>Uses :</b>This method is used in checking if one string is consisting of the permutation of
-                            the characters in the other string & returns a boolean<br />
-                            <b>Parameters :</b> <b>str1</b> - first string,
-                            <b>str2</b> - second string,
-                            <b>hint</b> is passed False by default, by declaring hint=True
-                            a detailed description of the string algorithm can be found.
-                          </p>
-                        <div class="code-block">
-                          <div id="python" class="section-block">
-                            <div class="code-block">
-                              <h6>Python Code Example</h6>
-                              <pre><code class="language-python">from edualgo import algorithms as al
+                    </div>
+                  </div>
+                </div>
+                <h2 style="color: brown" class="section-title">Permutation Checking</h2>
+                <div class="section-block" id="permutation-str">
+                  <p>
+                    <b>Module:</b>string_algorithms()<br />
+                    <b>Method :</b> <i>isPermutation(str1,str2,hint=False)</i><br />
+                    <b>Uses :</b>This method is used in checking if one string is consisting of the permutation of
+                    the characters in the other string & returns a boolean<br />
+                    <b>Parameters :</b> <b>str1</b> - first string,
+                    <b>str2</b> - second string,
+                    <b>hint</b> is passed False by default, by declaring hint=True
+                    a detailed description of the string algorithm can be found.
+                  </p>
+                  <div class="code-block">
+                    <div id="python" class="section-block">
+                      <div class="code-block">
+                        <h6>Python Code Example</h6>
+                        <pre><code class="language-python">from edualgo import algorithms as al
 ping = al.string_algorithms()
 
 str1 = "abcde"
 str2 = "ecbda"
 
-ping.isPermutation(str1,str2)</code></pre>
-                              <pre><code class="language-python">Output:
+ping.isPermutation(str1,str2)</code> <div class="tooltip" id="copy-btn"><a class="copy-btn"><span class="tooltiptext" id="tooltip">Copy to clipboard</span><i class="icon far fa-copy"></i></a></div></pre>
+                        <pre><code class="language-python">Output:
 True
 </code>
     </pre>
-    <i>For getting the hint just pass hint=True in the function like - isPermutation(str1,str2,True).</i>
-                            </div>
-                          </div>
-                        </div>
+                        <i>For getting the hint just pass hint=True in the function like -
+                          isPermutation(str1,str2,True).</i>
                       </div>
-                      <h2 style="color: brown"class="section-title">URL Making</h2>
-                    <div class="section-block">
-                          <p>
-                            <b>Module:</b>string_algorithms()<br />
-                            <b>Method :</b> <i>URLify(str1,key,hint=False)</i><br />
-                            <b>Uses :</b>This method is used for making a URL by replacing the white spaces with a key value entered & returns a string<br />
-                            <b>Parameters :</b> <b>str1</b> - a string,
-                            <b>key</b> : replacement for the whitespace,
-                            <b>hint</b> is passed False by default, by declaring hint=True
-                            a detailed description of the string algorithm can be found.
-                          </p>
-                        <div class="code-block">
-                          <div id="python" class="section-block">
-                            <div class="code-block">
-                              <h6>Python Code Example</h6>
-                              <pre><code class="language-python">from edualgo import algorithms as al
+                    </div>
+                  </div>
+                </div>
+                <h2 style="color: brown" class="section-title">URL Making</h2>
+                <div class="section-block" id="make-url">
+                  <p>
+                    <b>Module:</b>string_algorithms()<br />
+                    <b>Method :</b> <i>URLify(str1,key,hint=False)</i><br />
+                    <b>Uses :</b>This method is used for making a URL by replacing the white spaces with a key value
+                    entered & returns a string<br />
+                    <b>Parameters :</b> <b>str1</b> - a string,
+                    <b>key</b> : replacement for the whitespace,
+                    <b>hint</b> is passed False by default, by declaring hint=True
+                    a detailed description of the string algorithm can be found.
+                  </p>
+                  <div class="code-block">
+                    <div id="python" class="section-block">
+                      <div class="code-block">
+                        <h6>Python Code Example</h6>
+                        <pre><code class="language-python">from edualgo import algorithms as al
 ping = al.string_algorithms()
 
 str1 = "eduAlgo is an opensource organization"
 key = "%20"
 
-ping.URLify(str1,key)</code></pre>
-                              <pre><code class="language-python">Output:
+ping.URLify(str1,key)</code> <div class="tooltip" id="copy-btn"><a class="copy-btn"><span class="tooltiptext" id="tooltip">Copy to clipboard</span><i class="icon far fa-copy"></i></a></div></pre>
+                        <pre><code class="language-python">Output:
 'eduAlgo%20is%20an%20opensource%20organization'
 </code>
     </pre>
-    <i>For getting the hint just pass hint=True in the function like - URLify(str1,key,True).</i>
-                            </div>
-                          </div>
-                        </div>
+                        <i>For getting the hint just pass hint=True in the function like - URLify(str1,key,True).</i>
                       </div>
-                      <h2 style="color: brown"class="section-title">Palindromic Permutation</h2>
-                    <div class="section-block">
-                          <p>
-                            <b>Module:</b>string_algorithms()<br />
-                            <b>Method :</b> <i>isPalindromicPermutation(str1,hint=False)</i><br />
-                            <b>Uses :</b>This method can be used to check if the permutation of the characters in a string can
-                            make it palindromic & return boolean<br />
-                            <b>Parameters :</b> <b>str1</b> - a string,
-                            <b>hint</b> is passed False by default, by declaring hint=True
-                            a detailed description of the string algorithm can be found.
-                          </p>
-                        <div class="code-block">
-                          <div id="python" class="section-block">
-                            <div class="code-block">
-                              <h6>Python Code Example</h6>
-                              <pre><code class="language-python">from edualgo import algorithms as al
+                    </div>
+                  </div>
+                </div>
+                <h2 style="color: brown" class="section-title">Palindromic Permutation</h2>
+                <div class="section-block" id="palindrom-permutaion">
+                  <p>
+                    <b>Module:</b>string_algorithms()<br />
+                    <b>Method :</b> <i>isPalindromicPermutation(str1,hint=False)</i><br />
+                    <b>Uses :</b>This method can be used to check if the permutation of the characters in a string can
+                    make it palindromic & return boolean<br />
+                    <b>Parameters :</b> <b>str1</b> - a string,
+                    <b>hint</b> is passed False by default, by declaring hint=True
+                    a detailed description of the string algorithm can be found.
+                  </p>
+                  <div class="code-block">
+                    <div id="python" class="section-block">
+                      <div class="code-block">
+                        <h6>Python Code Example</h6>
+                        <pre><code class="language-python">from edualgo import algorithms as al
 ping = al.string_algorithms()
 
 str1 = "abbcad"
 
-ping.isPalindromicPermutation(str1)</code></pre>
-                              <pre><code class="language-python">Output:
+ping.isPalindromicPermutation(str1)</code> <div class="tooltip" id="copy-btn"><a class="copy-btn"><span class="tooltiptext" id="tooltip">Copy to clipboard</span><i class="icon far fa-copy"></i></a></div></pre>
+                        <pre><code class="language-python">Output:
 False
 </code>
     </pre>
-    <i>For getting the hint just pass hint=True in the function like - isPalindromicPermutation(str1,True).</i>
-                            </div>
-                          </div>
-                        </div>
+                        <i>For getting the hint just pass hint=True in the function like -
+                          isPalindromicPermutation(str1,True).</i>
                       </div>
-                      <h2 style="color: brown"class="section-title">One Edit Away</h2>
-                    <div class="section-block">
-                          <p>
-                            <b>Module:</b>string_algorithms()<br />
-                            <b>Method :</b> <i>oneEditAway(str1,str2,hint=False)</i><br />
-                            <b>Uses :</b>Check if two strings are one edit (or zero) away,& returns boolearn, where edit
-                            means the following three methods,<br>
-                                - inserting a character<br>
-                                - removing a character<br>
-                                - replacing a character<br />
-                            <b>Parameters :</b> <b>str1</b> - first string,
-                            <b>str2</b> - second string,
-                            <b>hint</b> is passed False by default, by declaring hint=True
-                            a detailed description of the string algorithm can be found.
-                          </p>
-                        <div class="code-block">
-                          <div id="python" class="section-block">
-                            <div class="code-block">
-                              <h6>Python Code Example</h6>
-                              <pre><code class="language-python">from edualgo import algorithms as al
+                    </div>
+                  </div>
+                </div>
+                <h2 style="color: brown" class="section-title">One Edit Away</h2>
+                <div class="section-block" id="one-edit-away">
+                  <p>
+                    <b>Module:</b>string_algorithms()<br />
+                    <b>Method :</b> <i>oneEditAway(str1,str2,hint=False)</i><br />
+                    <b>Uses :</b>Check if two strings are one edit (or zero) away,& returns boolearn, where edit
+                    means the following three methods,<br>
+                    - inserting a character<br>
+                    - removing a character<br>
+                    - replacing a character<br />
+                    <b>Parameters :</b> <b>str1</b> - first string,
+                    <b>str2</b> - second string,
+                    <b>hint</b> is passed False by default, by declaring hint=True
+                    a detailed description of the string algorithm can be found.
+                  </p>
+                  <div class="code-block">
+                    <div id="python" class="section-block">
+                      <div class="code-block">
+                        <h6>Python Code Example</h6>
+                        <pre><code class="language-python">from edualgo import algorithms as al
 ping = al.string_algorithms()
 
 str1 = "abbcad"
 str2 = "abbccd"
 
-ping.oneEditAway(str1,str2)</code></pre>
-                              <pre><code class="language-python">Output:
+ping.oneEditAway(str1,str2)</code> <div class="tooltip" id="copy-btn"><a class="copy-btn"><span class="tooltiptext" id="tooltip">Copy to clipboard</span><i class="icon far fa-copy"></i></a></div></pre>
+                        <pre><code class="language-python">Output:
 True
 </code>
     </pre>
-    <i>For getting the hint just pass hint=True in the function like - oneEditAway(str1,str2,True).</i>
-                            </div>
-                          </div>
-                        </div>
+                        <i>For getting the hint just pass hint=True in the function like -
+                          oneEditAway(str1,str2,True).</i>
                       </div>
-                      <h2 style="color: brown"class="section-title">Compressed Strings</h2>
-                    <div class="section-block">
-                          <p>
-                            <b>Module:</b>string_algorithms()<br />
-                            <b>Method :</b> <i>compressedString(str1,hint=False)</i><br />
-                            <b>Uses :</b>To compress the size of string by making a summary of the
-                            repeatation of the characters & returns the compressed string. Note that the compressed string is returned only if it's size is less than the original input string.<br />
-                            <b>Parameters :</b> <b>str1</b> - a string,
-                            <b>hint</b> is passed False by default, by declaring hint=True
-                            a detailed description of the string algorithm can be found.
-                          </p>
-                        <div class="code-block">
-                          <div id="python" class="section-block">
-                            <div class="code-block">
-                              <h6>Python Code Example</h6>
-                              <pre><code class="language-python">from edualgo import algorithms as al
+                    </div>
+                  </div>
+                </div>
+                <h2 style="color: brown" class="section-title">Compressed Strings</h2>
+                <div class="section-block" id="compressed-str">
+                  <p>
+                    <b>Module:</b>string_algorithms()<br />
+                    <b>Method :</b> <i>compressedString(str1,hint=False)</i><br />
+                    <b>Uses :</b>To compress the size of string by making a summary of the
+                    repeatation of the characters & returns the compressed string. Note that the compressed string is
+                    returned only if it's size is less than the original input string.<br />
+                    <b>Parameters :</b> <b>str1</b> - a string,
+                    <b>hint</b> is passed False by default, by declaring hint=True
+                    a detailed description of the string algorithm can be found.
+                  </p>
+                  <div class="code-block">
+                    <div id="python" class="section-block">
+                      <div class="code-block">
+                        <h6>Python Code Example</h6>
+                        <pre><code class="language-python">from edualgo import algorithms as al
 ping = al.string_algorithms()
 
 str1 = "aabbcccdddeeef"
 
-ping.compressedString(str1)</code></pre>
-                              <pre><code class="language-python">Output:
+ping.compressedString(str1)</code> <div class="tooltip" id="copy-btn"><a class="copy-btn"><span class="tooltiptext" id="tooltip">Copy to clipboard</span><i class="icon far fa-copy"></i></a></div></pre>
+                        <pre><code class="language-python">Output:
 'a2b2c3d3e3f1'
 </code>
     </pre>
-    <i>For getting the hint just pass hint=True in the function like - compressedString(str1,True).</i>
-                            </div>
-                          </div>
-                        </div>
+                        <i>For getting the hint just pass hint=True in the function like -
+                          compressedString(str1,True).</i>
                       </div>
-                </section>
+                    </div>
+                  </div>
+                </div>
+              </section>
+            </div>
+          </div>
+
+          <div class="doc-sidebar col-md-3 col-12 order-1 d-none d-md-flex">
+            <div id="doc-nav" class="doc-nav">
+              <nav id="doc-menu" class="nav doc-menu flex-column sticky">
+                <a class="nav-link scrollto" href="#code-section">String Implementations</a>
+                <nav class="doc-sub-menu nav flex-column">
+                  <a class="nav-link scrollto" href="#unique-str">Unique String</a>
+                  <a class="nav-link scrollto" href="#permutation-str">Permutation Checking</a>
+                  <a class="nav-link scrollto" href="#make-url">URL Making</a>
+                  <a class="nav-link scrollto" href="#palindrom-permutaion">Palindromic Permutation</a>
+                  <a class="nav-link scrollto" href="#one-edit-away">One Edit Away</a>
+                  <a class="nav-link scrollto" href="#compressed-str">Compressed Strings</a>
+                </nav>
+              </nav>
+
             </div>
           </div>
         </div>
@@ -258,12 +292,15 @@ ping.compressedString(str1)</code></pre>
     <div id="promo-block" class="promo-block">
       <div class="container">
         <div class="promo-block-inner">
-          <h3 class="promo-title text-center"><i class="fas fa-code"></i> <a href="#">Are you an ambitious Python Developer ?</a></h3>
+          <h3 class="promo-title text-center"><i class="fas fa-code"></i> <a href="#">Are you an ambitious Python
+              Developer ?</a></h3>
           <div class="row">
             <div class="figure-holder col-lg-5 col-md-6 col-12">
               <div class="figure-holder-inner">
-                <a href="https://github.com/Abhijit2505/eduAlgo" target="_blank"><img class="img-fluid" src="../assets/images/eduAlgogithub.PNG" alt="Instance Theme" /></a>
-                <a class="mask" href="https://github.com/Abhijit2505/eduAlgo" target="_blank"><i class="icon fas fa-star pink"></i></a>
+                <a href="https://github.com/Abhijit2505/eduAlgo" target="_blank"><img class="img-fluid"
+                    src="../assets/images/eduAlgogithub.PNG" alt="Instance Theme" /></a>
+                <a class="mask" href="https://github.com/Abhijit2505/eduAlgo" target="_blank"><i
+                    class="icon fas fa-star pink"></i></a>
 
               </div>
             </div>
@@ -275,16 +312,18 @@ ping.compressedString(str1)</code></pre>
                     come forwards and have some fun with our source code.
 
                     Steps to contibute:
-                    <ul>
-                      <li>
-                        Send an email to the developer <a href ="mailto:abhijittripathy99@gmail.com">here</a> regarding your willingness to contribute
-                        to the project.
-                      </li>
-                      <li>
-                        Have a read of our "How To Contribute" documentation <a href = "https://github.com/Abhijit2505/eduAlgo/blob/master/CONTRIBUTING.md">here</a>.
-                      </li>
-                    </ul>
-                    Keep coding, keep loving python <i class="fab fa-python"></i>
+                  <ul>
+                    <li>
+                      Send an email to the developer <a href="mailto:abhijittripathy99@gmail.com">here</a> regarding
+                      your willingness to contribute
+                      to the project.
+                    </li>
+                    <li>
+                      Have a read of our "How To Contribute" documentation <a
+                        href="https://github.com/Abhijit2505/eduAlgo/blob/master/CONTRIBUTING.md">here</a>.
+                    </li>
+                  </ul>
+                  Keep coding, keep loving python <i class="fab fa-python"></i>
                   </p>
                 </div>
               </div>
@@ -298,7 +337,8 @@ ping.compressedString(str1)</code></pre>
 
 
   <footer class="footer text-center">
-    Copyright 2020 @<a href="https://github.com/Abhijit2505" target="_blank">Abhijit Tripathy</a>. Package Designed by <a href="https://github.com/Abhijit2505" target="_blank">Abhijit Tripathy</a> for python enthusiasts
+    Copyright 2020 @<a href="https://github.com/Abhijit2505" target="_blank">Abhijit Tripathy</a>. Package Designed by
+    <a href="https://github.com/Abhijit2505" target="_blank">Abhijit Tripathy</a> for python enthusiasts
     [Theme Designed by <a href="https://themes.3rdwavemedia.com/" target="_blank">Xiaoying Riley</a>]
   </footer>
 
@@ -306,7 +346,7 @@ ping.compressedString(str1)</code></pre>
   <script type="text/javascript" src="../assets/plugins/bootstrap/js/bootstrap.min.js"></script>
   <script type="text/javascript" src="../assets/plugins/prism/prism.js"></script>
   <script type="text/javascript" src="../assets/plugins/jquery-scrollTo/jquery.scrollTo.min.js"></script>
-  <script type="text/javascript" src=../assets/plugins/stickyfill/dist/stickyfill.min.js"></script>
+  <script type="text/javascript" src="../assets/plugins/stickyfill/dist/stickyfill.min.js"></script>
   <script type="text/javascript" src="../assets/js/main.js"></script>
 
 </body>
