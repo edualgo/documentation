@@ -1288,6 +1288,17 @@ select {
   color: #8950fa;
 }
 
+@media only screen and (max-width: 600px) {
+  .landing-page .tagline {
+    font-weight: 600;
+    font-size: 12px;
+  }
+
+  .landing-page .tagline p {
+    margin-bottom: 3px;
+  }
+}
+
 .landing-page .fa-heart {
   color: #EA5395;
 }
