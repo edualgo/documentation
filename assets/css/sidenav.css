@@ -86,3 +86,15 @@
       margin-top: 11rem;
     }
   }
+
+  #navbar::-webkit-scrollbar {
+    width: 0.25rem;
+  }
+
+  #navbar::-webkit-scrollbar-track {
+    background: #F9F9FB;
+  }
+  
+  #navbar::-webkit-scrollbar-thumb {
+    background: #1b6ca8;
+  }
