@@ -62,7 +62,7 @@ $(document).ready(function () {
 
 });
 
-fetch('/documentation/navbar.html')
+fetch('/documentation/pages/navbar.html')
   .then(response => response.text())
   .then(text => {
     let nabvar = document.getElementById('navbar');
