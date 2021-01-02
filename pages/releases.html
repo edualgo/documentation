@@ -36,7 +36,7 @@
 
 <body class="body-green">
   <div class="page-wrapper">
-    <header id="header" class="header sticky" style="top: 0; z-index: 100;">
+    <header id="header" class="header">
       <div class="container">
         <div class="branding">
           <h1 class="logo">
@@ -239,7 +239,7 @@
           docnav += `<a class="nav-link scrollto" href="#${version.id}">${version.title}</a>`;
         });
 
-        docnav = `<nav class="doc-sub-menu nav flex-column sticky" style="top:9rem;">` + docnav + `</nav>`;
+        docnav = `<nav class="doc-sub-menu nav flex-column sticky" style="top:0rem;">` + docnav + `</nav>`;
 
         /* ============================================ Stopping Animation and Placing Data ============================================ */
         document.getElementById("installation-section").innerHTML = html;

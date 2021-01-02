@@ -29,6 +29,50 @@ html, body {
   height: 100%;
 }
 
+.tooltip {
+  position: relative;
+  display: inline-block;
+  opacity: 1;
+  z-index: 1;
+  font-size: inherit;
+  float: right;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 140px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  font-size: 0.85rem;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  bottom: 150%;
+  left: 50%;
+  margin-left: -75px;
+  opacity: 0;
+  z-index: 100;
+  transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+  z-index: 100;
+}
+
 .page-wrapper {
   min-height: 100%;
   /* equal to footer height */
@@ -96,6 +140,17 @@ code {
   padding: 2px 8px;
   padding-top: 4px;
   display: inline-block;
+}
+
+pre .copy-btn {
+  color: white !important;
+  float: right;
+}
+
+.copy-btn:hover {
+  background-color: #28323f;
+  border-radius: 2px;
+  padding: 2px 5px;
 }
 
 .btn, a.btn {
@@ -1650,4 +1705,16 @@ footer {
   .main-content .box {
     margin: 5px 0;
   }
+}
+
+body::-webkit-scrollbar {
+  width: 0.25rem;
+}
+
+body::-webkit-scrollbar-track {
+  background: #F9F9FB;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #8950fa;
 }
