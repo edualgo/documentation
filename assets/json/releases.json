@@ -1,0 +1,235 @@
+[
+    {
+        "id": "winterupdate",
+        "title": "v1.2.1.0 - Winter Update",
+        "date": "27th Nov 2020",
+        "feature_bugs": "In this release, few new things have been added,",
+        "feature_list": [
+            "bogo_sort, merge_sort, heap_sort, quick_sort",
+            "one greedy algorithm - minimum product subset",
+            "linear_serach, binary_search",
+            "stacks (Unstable)",
+            "queue (Unstable)"
+        ],
+        "developers": [
+            {
+                "name": "Abhijit Tripathy",
+                "github": "https://github.com/Abhijit2505"
+            },
+            {
+                "name": "Akshay Bhaskar",
+                "github": "https://github.com/Abhaskar1"
+            },
+            {
+                "name": "Yash Bhawsar",
+                "github": "https://github.com/yash872"
+            },
+            {
+                "name": "Rengraj D",
+                "github": "https://github.com/gnurenga"
+            },
+            {
+                "name": "Pransh Tiwari",
+                "github": "https://github.com/nyctophiliacme"
+            },
+            {
+                "name": "Kanak Kavadi",
+                "github": "https://github.com/KanakKvdi"
+            },
+            {
+                "name": "Apurv Deshpande",
+                "github": "https://github.com/24apurv"
+            },
+            {
+                "name": "Pragati Pal",
+                "github": "https://github.com/pragatipal"
+            },
+            {
+                "name": "Chippada Monisha",
+                "github": "https://github.com/Monisha-23"
+            }
+        ],
+        "testers": [
+            {
+                "name": "Abhijit Tripathy",
+                "github": "https://github.com/Abhijit2505"
+            }
+        ],
+        "programs": [
+            "Hacktoberfest 2020",
+            "PyCon India Devsprint 2020"
+        ]
+    },
+    {
+        "id": "alpha1.1.6",
+        "title": "v1.1.6 Alpha",
+        "date": "12th Sept 2020",
+        "feature_bugs": "There is a new feature known as <b>Algorithm Hints</b>",
+        "feature_list": [
+            "added algorithm hint method for bubble sort",
+            "added algorithm hint method for selection sort",
+            "added string algorithm hint method for isUnique() method",
+            "added string algorithm hint method for isPermutation() method",
+            "string algorithm hint method for URLify() method",
+            "In this release, few new things have been added"
+        ],
+        "developers": [
+            {
+                "name": "Abhijit Tripathy",
+                "github": "https://github.com/Abhijit2505"
+            }
+        ],
+        "testers": [
+            {
+                "name": "Abhijit Tripathy",
+                "github": "https://github.com/Abhijit2505"
+            }
+        ],
+        "programs": [
+            "FOSS Hack 2020"
+        ]
+    },
+    {
+        "id": "alpha1.1.5",
+        "title": "v1.1.5 Alpha",
+        "date": "27th Aug 2020",
+        "feature_bugs": "Added the below implementations based on the string/array algorithms,",
+        "feature_list": [
+            "Check a string is made up of unique characters",
+            "Check if one string is a permutation of the other",
+            "URLify the given string with a key",
+            "Check if a string is a permutation of a palindrome",
+            "Check if two strings are one Edit away",
+            "Compress a string in a fashion",
+            "Rotate a matrix in clockwise direction"
+        ],
+        "developers": [
+            {
+                "name": "Abhijit Tripathy",
+                "github": "https://github.com/Abhijit2505"
+            }
+        ],
+        "testers": [
+            {
+                "name": "Abhijit Tripathy",
+                "github": "https://github.com/Abhijit2505"
+            }
+        ],
+        "programs": []
+    },
+    {
+        "id": "version1.1.2",
+        "title": "v1.1.2",
+        "date": "13th Aug 2020",
+        "feature_bugs": "Added the following implementations,",
+        "feature_list": [
+            "Getting the intersection node between two linked lists",
+            "Given the binary representation of an integer, return the decimal value",
+            "Given a linked list, find the next larger nodes"
+        ],
+        "developers": [
+            {
+                "name": "Abhijit Tripathy",
+                "github": "https://github.com/Abhijit2505"
+            }
+        ],
+        "testers": [
+            {
+                "name": "Abhijit Tripathy",
+                "github": "https://github.com/Abhijit2505"
+            }
+        ],
+        "programs": []
+    },
+    {
+        "id": "version1.1.1",
+        "title": "v1.1.1",
+        "date": "9th Aug 2020",
+        "feature_bugs": "Added some documentation, minor updates to the code",
+        "feature_list": [],
+        "developers": [
+            {
+                "name": "Abhijit Tripathy",
+                "github": "https://github.com/Abhijit2505"
+            }
+        ],
+        "testers": [
+            {
+                "name": "Abhijit Tripathy",
+                "github": "https://github.com/Abhijit2505"
+            }
+        ],
+        "programs": []
+    },
+    {
+        "id": "version1.1.0",
+        "title": "v1.1.0",
+        "date": "9th Aug 2020",
+        "feature_bugs": "The following algorithms have been implemented in the <b>LinkedList</b> module,",
+        "feature_list": [
+            "Palindromic Linked List",
+            "Remove Linked List Elements",
+            "Remove Duplicates From a Sorted List",
+            "Merge Two Sorted List",
+            "Reverse Linked List",
+            "Delete Node In a Linked List",
+            "Middle Of the Linked List"
+        ],
+        "developers": [
+            {
+                "name": "Abhijit Tripathy",
+                "github": "https://github.com/Abhijit2505"
+            }
+        ],
+        "testers": [
+            {
+                "name": "Abhijit Tripathy",
+                "github": "https://github.com/Abhijit2505"
+            }
+        ],
+        "programs": []
+    },
+    {
+        "id": "version1.0.3",
+        "title": "v1.0.3",
+        "date": "8th Aug 2020",
+        "feature_bugs": "The documentation for the package has been modified and added to the repository, miner update.",
+        "feature_list": [],
+        "developers": [
+            {
+                "name": "Abhijit Tripathy",
+                "github": "https://github.com/Abhijit2505"
+            }
+        ],
+        "testers": [
+            {
+                "name": "Abhijit Tripathy",
+                "github": "https://github.com/Abhijit2505"
+            }
+        ],
+        "programs": []
+    },
+    {
+        "id": "version1.0.1",
+        "title": "v1.0.1 Planning Version",
+        "date": "7th Aug 2020",
+        "feature_bugs": "The planning version of the eduAlgo package which contains the following,",
+        "feature_list": [
+            "installation guide",
+            "two simple sorting algorithms"
+        ],
+        "developers": [
+            {
+                "name": "Abhijit Tripathy",
+                "github": "https://github.com/Abhijit2505"
+            }
+        ],
+        "testers": [
+            {
+                "name": "Abhijit Tripathy",
+                "github": "https://github.com/Abhijit2505"
+            }
+        ],
+        "programs": []
+    }
+]
